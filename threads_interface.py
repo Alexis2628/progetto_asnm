@@ -4,7 +4,7 @@ Provide a public interface for the Threads.
 import json
 import re
 import requests
-from progetto_asnm.baseinterface import BaseThreadsInterface
+from baseinterface import BaseThreadsInterface
 
 import os
 import pandas as pd
@@ -39,6 +39,8 @@ class ThreadsInterface(BaseThreadsInterface):
             'X-IG-App-ID': '238260118697367',
         }
 
+    def retrieve_user_id(self, username: str) -> int:
+        return super().retrieve_user_id(username)
     def retrieve_user(self, user_id: int) -> dict:
         """
         Retrieve a user.
@@ -146,10 +148,17 @@ class ThreadsInterface(BaseThreadsInterface):
                 'lsd': self.api_token,
                 'variables': json.dumps(
                     {
-                        'postID': thread_id,
+                        "postID":thread_id,
+                        "__relay_internal__pv__BarcelonaIsLoggedInrelayprovider":True,
+                        "__relay_internal__pv__BarcelonaShouldShowFediverseM1Featuresrelayprovider":False,
+                        "__relay_internal__pv__BarcelonaIsInlineReelsEnabledrelayprovider":True,
+                        "__relay_internal__pv__BarcelonaUseCometVideoPlaybackEnginerelayprovider":False,
+                        "__relay_internal__pv__BarcelonaOptionalCookiesEnabledrelayprovider":True,
+                        "__relay_internal__pv__BarcelonaShowReshareCountrelayprovider":False,
+                        "__relay_internal__pv__BarcelonaShouldShowFediverseM075Featuresrelayprovider":False,
                     }
                 ),
-                'doc_id': '5587632691339264',
+                'doc_id': '7784711788307337',
             },
         )
 
@@ -180,7 +189,37 @@ class ThreadsInterface(BaseThreadsInterface):
         )
 
         return response.json()
-
+    
+    def retrieve_thread_by_query(self, query: str) -> dict:
+        response = requests.post(
+            url=self.THREADS_API_URL,
+            headers=self.default_headers,
+            data={
+                'lsd': self.api_token,
+                "fb_api_req_friendly_name": "BarcelonaSearchResultsQuery",
+                "fb_api_caller_class": "RelayModern",
+                "__comet_req": 29,
+                'variables': json.dumps(
+                    {
+                        # "meta_place_id":None,
+                        # "pinned_ids":None,
+                        "query":query,
+                        "recent":0,  #1 per i post recenti
+                        "search_surface":"default",#tags, default
+                       
+                        "__relay_internal__pv__BarcelonaIsLoggedInrelayprovider":True,
+                        "__relay_internal__pv__BarcelonaIsInlineReelsEnabledrelayprovider":True,
+                        "__relay_internal__pv__BarcelonaUseCometVideoPlaybackEnginerelayprovider":False,
+                        "__relay_internal__pv__BarcelonaOptionalCookiesEnabledrelayprovider":True,
+                        "__relay_internal__pv__BarcelonaShowReshareCountrelayprovider":False,
+                        "__relay_internal__pv__BarcelonaShouldShowFediverseM075Featuresrelayprovider":False,
+                    }
+                ),
+                'doc_id': "26277468955231937",#'26277468955231937',
+            },
+        )
+        return response.json()
+        
     def _generate_api_token(self) -> str:
         """
         Generate a token for the Threads.
