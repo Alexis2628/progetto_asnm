@@ -1,4 +1,5 @@
 import json
+from utils import makecsv
 from threads_interface import ThreadsInterface
 import pandas as pd
 import os
@@ -136,14 +137,16 @@ class Retriever:
         return df
 
 
-ret = Retriever()
-df = pd.DataFrame()
-df2 = ret.retrieve_thread_by_query("olimpiadi")
+# ret = Retriever()
+# df = pd.DataFrame()
+# df2 = ret.retrieve_thread_by_query("olimpiadi")
 
-for id in df2["User ID"]:
-    ret.run_threads(id)
-    ret.run_replies(id)
-df=pd.concat([df,df2],ignore_index=True)
+# for id in df2["User ID"]:
+#     ret.run_threads(id)
+#     ret.run_replies(id)
+# df=pd.concat([df,df2],ignore_index=True)
 
-df.to_json("var/threads_by_query.json",indent=10)
-ret.to_json()
+# df.to_json("var/threads_by_query.json",indent=10)
+# ret.to_json()
+
+makecsv('var/replies.json','var/threads.json',"var/threads_by_query.json")
