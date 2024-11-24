@@ -2,8 +2,8 @@ from post_data_handler import PostDataHandler
 
 def main():
     # File CSV dove salvare i post raccolti
-    post_data_csv = 'post_data.csv'
-    replies_data_csv = 'replies_data.csv'
+    post_data_csv = '../data/post_data.csv'
+    replies_data_csv = '../data/replies_data.csv'
 
     # Query da cercare
     queries = [

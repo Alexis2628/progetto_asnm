@@ -1,6 +1,7 @@
 """
 Provide a public interface for the Threads.
 """
+import csv
 import json
 import re
 import requests
@@ -228,13 +229,57 @@ class ThreadsInterface(BaseThreadsInterface):
                         "__relay_internal__pv__BarcelonaUseCometVideoPlaybackEnginerelayprovider":False,
                         "__relay_internal__pv__BarcelonaOptionalCookiesEnabledrelayprovider":True,
                         "__relay_internal__pv__BarcelonaShowReshareCountrelayprovider":False,
-                        "__relay_internal__pv__BarcelonaShouldShowFediverseM075Featuresrelayprovider":False,
+                        "__relay_internal__pv__BarcelonaShouldShowFediverseM075Featuresrelayprovider":False
                     }
                 ),
                 'doc_id': "26277468955231937",#'26277468955231937',
             },
         )
         return response.json()
+    
+    def retrieve_follower_by_id(self,  user_id: str) -> dict:
+
+        session = requests.Session()
+        session.headers.update({
+            "authority": "www.threads.net",
+            "method": "POST",
+            "path": "/graphql/query",
+            "scheme": "https",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate, br",
+            "accept-language": "it,it-IT;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+            "origin": "https://www.threads.net",
+            "priority": "u=1, i",
+            "referer": "https://www.threads.net/",
+            "x-ig-app-id": "238260118697367",
+            "Content-Type": "application/x-www-form-urlencoded"
+        })
+        cookies = {
+            "sessionid": "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
+        }
+        session.cookies.update(cookies)
+
+        data={
+                'lsd': self.api_token,
+                "fb_api_req_friendly_name": "BarcelonaFriendshipsFollowersTabQuery",
+                "fb_api_caller_class": "RelayModern",
+                "__comet_req": 29,
+                'variables':json.dumps({
+                    "first": 20,
+                    "userID": user_id,
+                    "__relay_internal__pv__BarcelonaIsLoggedInrelayprovider": True,
+                    "__relay_internal__pv__BarcelonaIsCrawlerrelayprovider": False,
+                    "__relay_internal__pv__BarcelonaShouldShowFediverseListsrelayprovider": False,
+                    "__relay_internal__pv__BarcelonaIsInlineReelsEnabledrelayprovider" : False
+                }),
+                'doc_id': "8556216414475236",#'26277468955231937',
+            }
+
+
+        response = session.post("https://www.threads.net/graphql/query", data=data)
+        
+        return response.json()
+
     
     def retrieve_replies_by_post_id(self, post_id: str) -> dict:
         session = requests.Session()
@@ -343,3 +388,4 @@ class ThreadsInterface(BaseThreadsInterface):
         """
         with open(filename, 'a') as json_file:
             json.dump(data, json_file)
+  
