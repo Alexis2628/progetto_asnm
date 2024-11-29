@@ -47,7 +47,7 @@ def create_user_followers_map( csv_file, output_file):
 
                 # Salta se l'utente è già presente nell'output
             if user_id in user_followers_map:
-                print(f"Utente {user_id} già processato, salto.")
+                #print(f"Utente {user_id} già processato, salto.")
                 continue
             iter=iter+1
                 # Processa l'utente
