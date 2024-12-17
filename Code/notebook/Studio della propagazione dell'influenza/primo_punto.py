@@ -3,6 +3,7 @@ import random
 from DataProcessor import DataProcessor
 from GraphConstructor import GraphConstructor
 
+
 # Class for influence models
 class InfluenceModels:
 
@@ -13,7 +14,7 @@ class InfluenceModels:
     # 2.	Attivazione: Un nodo diventa attivo se la somma delle influenze (ovvero, il peso degli archi dai vicini attivi) supera la sua soglia.
     # 3.	Propagazione: Una volta che un nodo diventa attivo, influenza i suoi vicini, i quali potrebbero a loro volta superare la loro soglia di attivazione.
     # Formula: La soglia θi\theta_i per ogni nodo ii è generata casualmente tra 0 e 1. Un nodo ii diventa attivo se:
-    # ∑j∈N(i)wijxj≥θi\sum_{j \in N(i)} w_{ij} x_j \geq \theta_i 
+    # ∑j∈N(i)wijxj≥θi\sum_{j \in N(i)} w_{ij} x_j \geq \theta_i
     # Dove:
     # •	N(i)N(i) è l'insieme dei vicini del nodo ii,
     # •	wijw_{ij} è il peso dell'arco che collega il nodo jj con ii,
@@ -25,8 +26,7 @@ class InfluenceModels:
     # •	Diffusione di idee: Le idee si diffondono in modo simile a una catena, in cui ogni individuo può influenzare quelli che lo circondano.
     # Implementazione: Nel codice, l'attivazione di un nodo dipende dall'influenza ricevuta dai suoi vicini. Ogni nodo ha una soglia casuale, e la propagazione continua finché ci sono nodi che possono essere attivati.
     # """
-    
-    @staticmethod
+
     def linear_threshold_model(graph, seed_nodes):
         graph = graph.to_undirected()
         activated = set(seed_nodes)
@@ -34,27 +34,27 @@ class InfluenceModels:
 
         for node in graph.nodes():
             neighbors = list(graph.neighbors(node))
-        
+
             if neighbors:
                 weight = 1 / len(neighbors)
                 for neighbor in neighbors:
-                    graph.edges[node, neighbor]['influence'] = weight
+                    graph.edges[node, neighbor]["influence"] = weight
 
         while newly_activated:
             next_activated = set()
             for node in graph.nodes():
                 if node not in activated:
                     total_influence = sum(
-                        graph.edges[neighbor, node]['influence'] for neighbor in graph.neighbors(node)
+                        graph.edges[neighbor, node]["influence"]
+                        for neighbor in graph.neighbors(node)
                         if neighbor in activated
                     )
-                    if total_influence >= graph.nodes[node]['threshold']:
+                    if total_influence >= graph.nodes[node]["threshold"]:
                         next_activated.add(node)
 
             newly_activated = next_activated
             activated.update(newly_activated)
         return activated
-
 
     # """
     # Modello a Cascata Indipendente (Independent Cascade Model)
@@ -87,7 +87,6 @@ class InfluenceModels:
 
         return activated
 
-
     # """
     # Simulazione SIR - Susceptible-Infected)
     # Teoria: Il modello SI (Susceptible-Infected) è una versione semplificata dei modelli epidemiologici, che si concentra solo sulla diffusione di una malattia o comportamento da "suscettibili" a "infetti", senza considerare la fase di recupero. È utile per descrivere situazioni in cui un individuo, una volta infetto, non può mai recuperare o tornare suscettibile (come nel caso di una malattia permanente).
@@ -96,30 +95,29 @@ class InfluenceModels:
     # 3.	Dinamica: Gli individui infetti contagiano i suscettibili con una probabilità β\beta.
     # La dinamica dell'infezione è modellata con una probabilità β\beta che descrive il rischio che un suscettibile venga infettato da un vicino infetto. Una volta infetti, i nodi non tornano suscettibili, ma continuano a diffondere l'infezione.
     # Equazione:
-    # •	La probabilità di infettare un vicino suscettibile SS da un infetto II è descritta da: dSdt=−β⋅S⋅I\frac{dS}{dt} = -\beta \cdot S \cdot I dIdt=β⋅S⋅I\frac{dI}{dt} = \beta \cdot S \cdot I 
+    # •	La probabilità di infettare un vicino suscettibile SS da un infetto II è descritta da: dSdt=−β⋅S⋅I\frac{dS}{dt} = -\beta \cdot S \cdot I dIdt=β⋅S⋅I\frac{dI}{dt} = \beta \cdot S \cdot I
     # Applicazioni: Questo modello è utilizzato quando non si vuole considerare la fase di recupero, come ad esempio in alcune epidemie acute (es. HIV, dove una volta che una persona è infetta non diventa mai suscettibile).
     # Implementazione: Nel codice, la funzione simulate_si modella il flusso da "suscettibile" a "infetto" nei nodi di una rete. I nodi iniziano come suscettibili e diventano infetti quando interagiscono con nodi infetti, con una probabilità β\beta.
     # """
 
     @staticmethod
     def simulate_si(graph, beta, steps):
-        states = {node: 'S' for node in graph.nodes}
+        states = {node: "S" for node in graph.nodes}
         infected = random.choice(list(graph.nodes))
-        states[infected] = 'I'
+        states[infected] = "I"
 
         results = []
         for _ in range(steps):
             new_states = states.copy()
             for node in graph.nodes:
-                if states[node] == 'S':
+                if states[node] == "S":
                     for neighbor in graph.neighbors(node):
-                        if states[neighbor] == 'I' and random.random() < beta:
-                            new_states[node] = 'I'
+                        if states[neighbor] == "I" and random.random() < beta:
+                            new_states[node] = "I"
                             break
             states = new_states
             results.append(states.copy())
         return results
-
 
     # """
     # Modello SIR (Susceptible-Infected-Recovered)
@@ -131,7 +129,7 @@ class InfluenceModels:
     # •	Ogni individuo suscettibile ha una probabilità β\beta di essere infettato da un vicino infetto.
     # •	Un individuo infetto può passare a recuperato con probabilità γ\gamma.
     # Equazioni:
-    # •	La velocità di cambiamento delle proporzioni di individui nei vari stati è data da: dSdt=−β⋅S⋅I\frac{dS}{dt} = -\beta \cdot S \cdot I dIdt=β⋅S⋅I−γ⋅I\frac{dI}{dt} = \beta \cdot S \cdot I - \gamma \cdot I dRdt=γ⋅I\frac{dR}{dt} = \gamma \cdot I 
+    # •	La velocità di cambiamento delle proporzioni di individui nei vari stati è data da: dSdt=−β⋅S⋅I\frac{dS}{dt} = -\beta \cdot S \cdot I dIdt=β⋅S⋅I−γ⋅I\frac{dI}{dt} = \beta \cdot S \cdot I - \gamma \cdot I dRdt=γ⋅I\frac{dR}{dt} = \gamma \cdot I
     # Dove SS, II, e RR sono le frazioni di individui suscettibili, infetti e recuperati, rispettivamente, in un dato momento.
     # Applicazioni:
     # •	Malattie infettive: Simula la diffusione di epidemie come influenza o Covid-19.
@@ -141,27 +139,25 @@ class InfluenceModels:
     # """
     @staticmethod
     def simulate_sir(graph, beta, gamma, steps):
-        states = {node: 'S' for node in graph.nodes}
+        states = {node: "S" for node in graph.nodes}
         infected = random.choice(list(graph.nodes))
-        states[infected] = 'I'
+        states[infected] = "I"
 
         results = []
         for _ in range(steps):
             new_states = states.copy()
             for node in graph.nodes:
-                if states[node] == 'S':
+                if states[node] == "S":
                     for neighbor in graph.neighbors(node):
-                        if states[neighbor] == 'I' and random.random() < beta:
-                            new_states[node] = 'I'
+                        if states[neighbor] == "I" and random.random() < beta:
+                            new_states[node] = "I"
                             break
-                elif states[node] == 'I':
+                elif states[node] == "I":
                     if random.random() < gamma:
-                        new_states[node] = 'R'
+                        new_states[node] = "R"
             states = new_states
             results.append(states.copy())
         return results
-
-
 
     # """
     # Modello SIS (Susceptible-Infected-Susceptible)
@@ -170,7 +166,7 @@ class InfluenceModels:
     # •	Gli individui Suscettibili (S) possono diventare Infetti (I) se vengono esposti a un vicino infetto.
     # •	Gli individui Infetti (I) possono tornare Suscettibili (S) dopo essersi "recuperati" (senza immunità permanente).
     # Equazioni:
-    # •	Le dinamiche del modello SIS sono descritte dalle seguenti equazioni differenziali: dSdt=−β⋅S⋅I+γ⋅I\frac{dS}{dt} = -\beta \cdot S \cdot I + \gamma \cdot I dIdt=β⋅S⋅I−γ⋅I\frac{dI}{dt} = \beta \cdot S \cdot I - \gamma \cdot I 
+    # •	Le dinamiche del modello SIS sono descritte dalle seguenti equazioni differenziali: dSdt=−β⋅S⋅I+γ⋅I\frac{dS}{dt} = -\beta \cdot S \cdot I + \gamma \cdot I dIdt=β⋅S⋅I−γ⋅I\frac{dI}{dt} = \beta \cdot S \cdot I - \gamma \cdot I
     # Applicazioni:
     # •	Malattie infettive senza immunità: Infezioni come l'influenza, dove l'immunità dura solo per un periodo limitato.
     # •	Comportamenti ad alta diffusione: Comportamenti sociali che tornano frequentemente a diffondersi in una rete, come tendenze di moda.
@@ -178,26 +174,25 @@ class InfluenceModels:
     # """
     @staticmethod
     def simulate_sis(graph, beta, gamma, steps):
-        states = {node: 'S' for node in graph.nodes}
+        states = {node: "S" for node in graph.nodes}
         infected = random.choice(list(graph.nodes))
-        states[infected] = 'I'
+        states[infected] = "I"
 
         results = []
         for _ in range(steps):
             new_states = states.copy()
             for node in graph.nodes:
-                if states[node] == 'S':
+                if states[node] == "S":
                     for neighbor in graph.neighbors(node):
-                        if states[neighbor] == 'I' and random.random() < beta:
-                            new_states[node] = 'I'
+                        if states[neighbor] == "I" and random.random() < beta:
+                            new_states[node] = "I"
                             break
-                elif states[node] == 'I':
+                elif states[node] == "I":
                     if random.random() < gamma:
-                        new_states[node] = 'S'
+                        new_states[node] = "S"
             states = new_states
             results.append(states.copy())
         return results
-
 
     # """
     # Modello SIRS (Susceptible-Infected-Recovered-Susceptible)
@@ -205,36 +200,35 @@ class InfluenceModels:
     # Dinamiche:
     # •	Gli individui Recuperati (R) tornano a essere Suscettibili (S) con una probabilità λ\lambda, rappresentando il decadimento dell'immunità.
     # Equazioni:
-    # •	Le dinamiche del modello SIRS sono rappresentate da: dSdt=−β⋅S⋅I+λ⋅R\frac{dS}{dt} = -\beta \cdot S \cdot I + \lambda \cdot R dIdt=β⋅S⋅I−γ⋅I\frac{dI}{dt} = \beta \cdot S \cdot I - \gamma \cdot I dRdt=γ⋅I−λ⋅R\frac{dR}{dt} = \gamma \cdot I - \lambda \cdot R 
+    # •	Le dinamiche del modello SIRS sono rappresentate da: dSdt=−β⋅S⋅I+λ⋅R\frac{dS}{dt} = -\beta \cdot S \cdot I + \lambda \cdot R dIdt=β⋅S⋅I−γ⋅I\frac{dI}{dt} = \beta \cdot S \cdot I - \gamma \cdot I dRdt=γ⋅I−λ⋅R\frac{dR}{dt} = \gamma \cdot I - \lambda \cdot R
     # Applicazioni:
     # •	Malattie con immunità temporanea: Ad esempio, infezioni dove una persona può tornare suscettibile dopo un po' di tempo (come alcune malattie stagionali).
     # Implementazione: Nel codice, il nodo infetto può diventare recuperato, e dopo un po', può tornare suscettibile, creando una dinamica ciclica.
     # """
     @staticmethod
     def simulate_sirs(graph, beta, gamma, lambda_, steps):
-        states = {node: 'S' for node in graph.nodes}
+        states = {node: "S" for node in graph.nodes}
         infected = random.choice(list(graph.nodes))
-        states[infected] = 'I'
+        states[infected] = "I"
 
         results = []
         for _ in range(steps):
             new_states = states.copy()
             for node in graph.nodes:
-                if states[node] == 'S':
+                if states[node] == "S":
                     for neighbor in graph.neighbors(node):
-                        if states[neighbor] == 'I' and random.random() < beta:
-                            new_states[node] = 'I'
+                        if states[neighbor] == "I" and random.random() < beta:
+                            new_states[node] = "I"
                             break
-                elif states[node] == 'I':
+                elif states[node] == "I":
                     if random.random() < gamma:
-                        new_states[node] = 'R'
-                elif states[node] == 'R':
+                        new_states[node] = "R"
+                elif states[node] == "R":
                     if random.random() < lambda_:
-                        new_states[node] = 'S'
+                        new_states[node] = "S"
             states = new_states
             results.append(states.copy())
         return results
-
 
     # """
     # Simulazione con Threshold - Greater-Than Model)
@@ -257,8 +251,13 @@ class InfluenceModels:
             new_activated = activated.copy()
             for node in graph.nodes:
                 if node not in activated:
-                    active_neighbors = sum(1 for neighbor in graph.neighbors(node) if neighbor in activated)
-                    if graph.degree[node] > 0 and active_neighbors / graph.degree[node] >= thresholds[node]:
+                    active_neighbors = sum(
+                        1 for neighbor in graph.neighbors(node) if neighbor in activated
+                    )
+                    if (
+                        graph.degree[node] > 0
+                        and active_neighbors / graph.degree[node] >= thresholds[node]
+                    ):
                         new_activated.add(node)
             activated = new_activated
             results.append(activated.copy())
@@ -295,7 +294,6 @@ class InfluenceModels:
             activated = new_activated
             results.append(activated.copy())
         return results
-    
 
     # """
     # Simulazione con Threshold Reversibile)
@@ -312,8 +310,6 @@ class InfluenceModels:
     @staticmethod
     def simulate_tr(graph, prob, steps):
         return InfluenceModels.simulate_gc(graph, prob, steps)
-
-
 
     # """
     # Simulazione con Diffusione Deterministica e Caotica)
@@ -347,7 +343,7 @@ class InfluenceModels:
             prob *= decay_factor
             results.append(activated.copy())
         return results
-    
+
     # """
     # Dinamicità amico-nemico con soglia lineare)
     # Teoria: Nel modello Friend-Foe Dynamic Linear Threshold, la rete viene suddivisa in due categorie principali: amici e nemici. Ogni nodo ha una soglia e viene influenzato dai suoi vicini, che possono essere amici (che rinforzano il comportamento) o nemici (che contrastano l'influenza).
@@ -355,7 +351,7 @@ class InfluenceModels:
     # 2.	Nemici: I vicini nemici riducono la probabilità di attivazione.
     # Dinamica: Ogni nodo ha una soglia e viene influenzato in modo diverso da amici e nemici. Un nodo si attiva solo se l'influenza netta (amici - nemici) supera una soglia prestabilita.
     # Equazione:
-    # •	La somma delle influenze dei vicini amichevoli e nemici deve superare la soglia per l'attivazione: ∑j∈amiciwij−∑k∈nemiciwik>θi\sum_{j \in \text{amici}} w_{ij} - \sum_{k \in \text{nemici}} w_{ik} > \theta_i 
+    # •	La somma delle influenze dei vicini amichevoli e nemici deve superare la soglia per l'attivazione: ∑j∈amiciwij−∑k∈nemiciwik>θi\sum_{j \in \text{amici}} w_{ij} - \sum_{k \in \text{nemici}} w_{ik} > \theta_i
     # Applicazioni:
     # •	Dinamiche sociali: Influenze positive (amici) e negative (nemici) che determinano se un comportamento o una tendenza si diffonde.
     # •	Politiche: Come le opinioni politiche o ideologiche si diffondono tra alleati e oppositori.
@@ -367,16 +363,18 @@ class InfluenceModels:
         quiescent = {}
 
         for node in graph.nodes():
-            graph.nodes[node]['threshold'] = random.uniform(0, 1)
+            graph.nodes[node]["threshold"] = random.uniform(0, 1)
 
         while True:
             new_activations = set()
             for node in graph.nodes():
                 if node not in activated:
                     trusted_influence = sum(
-                        trust_function(neighbor, node) for neighbor in graph.predecessors(node) if neighbor in activated
+                        trust_function(neighbor, node)
+                        for neighbor in graph.predecessors(node)
+                        if neighbor in activated
                     )
-                    if trusted_influence >= graph.nodes[node]['threshold']:
+                    if trusted_influence >= graph.nodes[node]["threshold"]:
                         quiescence_time = random.uniform(0, 1)
                         quiescent[node] = quiescence_time
                         new_activations.add(node)
@@ -391,6 +389,243 @@ class InfluenceModels:
                     quiescent[node] -= 0.1
 
         return activated
+
+    def greedy(self, k, p=0.1):
+        """Algoritmo Greedy per la massimizzazione dell'influenza"""
+        current_seeds = set()
+        for _ in range(k):
+            best_node = None
+            best_influence = 0
+            for node in self.graph.nodes():
+                if node not in current_seeds:
+                    temp_seeds = current_seeds | {node}
+                    influence = len(self.independent_cascade(temp_seeds, p))
+                    if influence > best_influence:
+                        best_influence = influence
+                        best_node = node
+            current_seeds.add(best_node)
+        return current_seeds
+
+    def celf(self, k, p=0.1):
+        """Algoritmo CELF (Cost-Effective Lazy Greedy)"""
+        current_seeds = set()
+        influence_cache = {}
+        heap = []
+
+        for _ in range(k):
+            best_node = None
+            best_influence = 0
+            for node in self.graph.nodes():
+                if node not in current_seeds:
+                    if node not in influence_cache:
+                        influence_cache[node] = len(
+                            self.independent_cascade(current_seeds | {node}, p)
+                        )
+                    influence = influence_cache[node]
+                    if influence > best_influence:
+                        best_influence = influence
+                        best_node = node
+            current_seeds.add(best_node)
+            heapq.heappush(
+                heap, (-best_influence, best_node)
+            )  # usiamo il valore negativo per max-heap
+        return current_seeds
+
+    def celf_plus(self, k, p=0.1):
+        """Algoritmo CELF++ (miglioramento di CELF)"""
+        current_seeds = set()
+        influence_cache = {}
+        heap = []
+
+        for _ in range(k):
+            best_node = None
+            best_influence = 0
+            for node in self.graph.nodes():
+                if node not in current_seeds:
+                    if node not in influence_cache:
+                        influence_cache[node] = len(
+                            self.independent_cascade(current_seeds | {node}, p)
+                        )
+                    influence = influence_cache[node]
+                    if influence > best_influence:
+                        best_influence = influence
+                        best_node = node
+            current_seeds.add(best_node)
+            heapq.heappush(
+                heap, (-best_influence, best_node)
+            )  # usiamo il valore negativo per max-heap
+        return current_seeds
+
+    def stop_and_go(self, k, p=0.1):
+        """Algoritmo Stop-And-Go"""
+        current_seeds = set()
+        while len(current_seeds) < k:
+            best_node = None
+            best_influence = 0
+            for node in self.graph.nodes():
+                if node not in current_seeds:
+                    temp_seeds = current_seeds | {node}
+                    influence = len(self.independent_cascade(temp_seeds, p))
+                    if influence > best_influence:
+                        best_influence = influence
+                        best_node = node
+            current_seeds.add(best_node)
+        return current_seeds
+
+    def static(self, k, p=0.1):
+        """Algoritmo Static (scelta statica dei nodi)"""
+        # Qui si potrebbe implementare un approccio basato su centralità (degree, betweenness, etc.)
+        # come esempio userò il grado dei nodi
+        current_seeds = set()
+        sorted_nodes = sorted(
+            self.graph.nodes(), key=lambda node: self.graph.degree(node), reverse=True
+        )
+        return set(sorted_nodes[:k])
+
+        ### SIMPATH ###
+
+    def simpath(self, k, p=0.1, path_limit=3):
+        """Algoritmo SIMPATH basato sui percorsi influenti"""
+
+        def compute_path_influence(node, path_limit):
+            visited = set()
+            stack = [(node, 0)]
+            influence = 0
+
+            while stack:
+                current_node, depth = stack.pop()
+                if depth > path_limit or current_node in visited:
+                    continue
+                visited.add(current_node)
+                influence += 1
+                for neighbor in self.graph.neighbors(current_node):
+                    stack.append((neighbor, depth + 1))
+            return influence
+
+        seed_set = set()
+        for _ in range(k):
+            best_node = max(
+                self.graph.nodes(), key=lambda n: compute_path_influence(n, path_limit)
+            )
+            seed_set.add(best_node)
+            self.graph.remove_node(best_node)
+        return seed_set
+
+    ### LDAG ###
+    def ldag(self, k, p=0.1, threshold=0.5):
+        """Algoritmo LDAG: Local DAG-based propagation"""
+
+        def build_local_dag(node, threshold):
+            local_dag = nx.DiGraph()
+            visited = set([node])
+            queue = [node]
+            while queue:
+                current = queue.pop(0)
+                for neighbor in self.graph.neighbors(current):
+                    if random.random() < threshold:
+                        local_dag.add_edge(current, neighbor)
+                        if neighbor not in visited:
+                            visited.add(neighbor)
+                            queue.append(neighbor)
+            return local_dag
+
+        seed_set = set()
+        for _ in range(k):
+            best_node = max(
+                self.graph.nodes(), key=lambda n: len(build_local_dag(n, threshold))
+            )
+            seed_set.add(best_node)
+        return seed_set
+
+    ### IRIE ###
+    def irie(self, k, p=0.1):
+        """Algoritmo IRIE basato su Random Walk e Linear Influence"""
+        influence_scores = {node: 1 for node in self.graph.nodes()}
+
+        for _ in range(5):  # Itera per stabilizzare i punteggi
+            new_scores = {}
+            for node in self.graph.nodes():
+                new_scores[node] = 1 + sum(
+                    influence_scores[neighbor] * p
+                    for neighbor in self.graph.predecessors(node)
+                )
+            influence_scores = new_scores
+
+        seed_set = set(
+            sorted(influence_scores, key=influence_scores.get, reverse=True)[:k]
+        )
+        return seed_set
+
+    ### PMC ###
+    def pmc(self, k, p=0.1):
+        """PMC: Approssimazione usando grafi ridotti"""
+        reduced_graph = self.graph.copy()
+        for u, v in self.graph.edges():
+            if random.random() > p:
+                reduced_graph.remove_edge(u, v)
+
+        seed_set = set(
+            sorted(
+                reduced_graph.nodes(),
+                key=nx.degree_centrality(reduced_graph),
+                reverse=True,
+            )[:k]
+        )
+        return seed_set
+
+    ### TIM+ ###
+    def tim_plus(self, k, p=0.1, rr_sets=100):
+        """TIM+: Reverse Reachable Set Sampling"""
+
+        def generate_rr_set():
+            node = random.choice(list(self.graph.nodes()))
+            rr_set = set([node])
+            queue = [node]
+            while queue:
+                current = queue.pop(0)
+                for neighbor in self.graph.predecessors(current):
+                    if neighbor not in rr_set and random.random() < p:
+                        rr_set.add(neighbor)
+                        queue.append(neighbor)
+            return rr_set
+
+        rr_sets_list = [generate_rr_set() for _ in range(rr_sets)]
+        seed_set = set()
+        for _ in range(k):
+            max_node = max(
+                self.graph.nodes(),
+                key=lambda n: sum(1 for rr in rr_sets_list if n in rr),
+            )
+            seed_set.add(max_node)
+            rr_sets_list = [rr for rr in rr_sets_list if max_node not in rr]
+        return seed_set
+
+    ### EaSyIM ###
+    def easyim(self, k, p=0.1):
+        """EaSyIM: Ottimizzato con Sketching e campioni"""
+        sketch = {node: random.uniform(0, 1) for node in self.graph.nodes()}
+        seed_set = set(sorted(sketch, key=sketch.get)[:k])
+        return seed_set
+
+    ### Sketching ###
+    def sketching(self, k, p=0.1):
+        """Sketching: Riduzione e selezione ottimizzata"""
+        reduced_nodes = sorted(
+            self.graph.nodes(), key=lambda n: self.graph.degree(n), reverse=True
+        )[: len(self.graph.nodes()) // 2]
+        subgraph = self.graph.subgraph(reduced_nodes)
+        return set(sorted(subgraph.nodes(), key=subgraph.degree, reverse=True)[:k])
+
+    ### Singles ###
+    def singles(self, k, p=0.1):
+        """Singles: Valutazione dei singoli nodi"""
+        return set(
+            sorted(
+                self.graph.nodes(),
+                key=lambda n: len(self.independent_cascade({n}, p)),
+                reverse=True,
+            )[:k]
+        )
 
 
 if __name__ == "__main__":
@@ -412,16 +647,17 @@ if __name__ == "__main__":
 
     # Adding thresholds to nodes
     for node in graph.nodes():
-        graph.nodes[node]['threshold'] =  random.uniform(0, 1)
+        graph.nodes[node]["threshold"] = random.uniform(0, 1)
 
     # Centrality calculation
     centralities = graph_builder.calculate_centralities()
-    top_influencers = sorted(centralities['PageRank'].items(), key=lambda x: x[1], reverse=True)[:10]
+    top_influencers = sorted(
+        centralities["PageRank"].items(), key=lambda x: x[1], reverse=True
+    )[:10]
     seed_nodes = [node for node, _ in top_influencers]
 
     # Influence models
 
-    
     # Linear Threshold Model
     lt_model = InfluenceModels.linear_threshold_model(graph, seed_nodes)
     print("Number of nodes activated (LT Model):", len(lt_model))
@@ -432,43 +668,53 @@ if __name__ == "__main__":
 
     # Simulate SI (Susceptible-Infected)
     si_results = InfluenceModels.simulate_si(graph, beta=0.1, steps=100)
-    #print("SI Model Results (first step):", si_results[0])
+    # print("SI Model Results (first step):", si_results[0])
 
     # Simulate SIR (Susceptible-Infected-Recovered)
     sir_results = InfluenceModels.simulate_sir(graph, beta=0.1, gamma=0.05, steps=100)
-    #print("SIR Model Results (first step):", sir_results[0])
+    # print("SIR Model Results (first step):", sir_results[0])
 
     # Simulate SIS (Susceptible-Infected-Susceptible)
     sis_results = InfluenceModels.simulate_sis(graph, beta=0.1, gamma=0.05, steps=100)
-    #print("SIS Model Results (first step):", sis_results[0])
+    # print("SIS Model Results (first step):", sis_results[0])
 
     # Simulate SIRS (Susceptible-Infected-Recovered-Susceptible)
-    sirs_results = InfluenceModels.simulate_sirs(graph, beta=0.1, gamma=0.05, lambda_=0.01, steps=100)
-    #print("SIRS Model Results (first step):", sirs_results[0])
+    sirs_results = InfluenceModels.simulate_sirs(
+        graph, beta=0.1, gamma=0.05, lambda_=0.01, steps=100
+    )
+    # print("SIRS Model Results (first step):", sirs_results[0])
 
     # Simulate GT (General Threshold)
-    gt_results = InfluenceModels.simulate_gt(graph, thresholds={node: random.uniform(0, 1) for node in graph.nodes()}, steps=100)
-    #print("GT Model Results (first step):", gt_results[0])
+    gt_results = InfluenceModels.simulate_gt(
+        graph,
+        thresholds={node: random.uniform(0, 1) for node in graph.nodes()},
+        steps=100,
+    )
+    # print("GT Model Results (first step):", gt_results[0])
 
     # Simulate GC (General Cascade)
     gc_results = InfluenceModels.simulate_gc(graph, prob=0.1, steps=100)
-    #print("GC Model Results (first step):", gc_results[0])
+    # print("GC Model Results (first step):", gc_results[0])
 
     # Simulate TR (Threshold Random)
     tr_results = InfluenceModels.simulate_tr(graph, prob=0.1, steps=100)
-    #print("TR Model Results (first step):", tr_results[0])
+    # print("TR Model Results (first step):", tr_results[0])
 
     # Simulate DC (Decay Cascade)
-    dc_results = InfluenceModels.simulate_dc(graph, initial_prob=0.1, decay_factor=0.95, steps=100)
-    #print("DC Model Results (first step):", dc_results[0])
+    dc_results = InfluenceModels.simulate_dc(
+        graph, initial_prob=0.1, decay_factor=0.95, steps=100
+    )
+    # print("DC Model Results (first step):", dc_results[0])
 
     # Friend-Foe Dynamic Linear Threshold Model
     def trust_function(neighbor, node):
         # A simple trust function: return 1 for all neighbors (can be customized)
         return 1
 
-    friend_foe_results = InfluenceModels.friend_foe_dynamic_linear_threshold(graph, seed_nodes, trust_function)
-    #print("Friend-Foe Dynamic Linear Threshold Model Results:", len(friend_foe_results))
+    friend_foe_results = InfluenceModels.friend_foe_dynamic_linear_threshold(
+        graph, seed_nodes, trust_function
+    )
+    # print("Friend-Foe Dynamic Linear Threshold Model Results:", len(friend_foe_results))
 
-    #Print Top Influencers by PageRank
+    # Print Top Influencers by PageRank
     print("Top Influencers by PageRank:", top_influencers)
