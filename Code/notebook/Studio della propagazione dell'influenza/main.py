@@ -25,7 +25,8 @@ if __name__ == "__main__":
     graph_builder = GraphConstructor(followers_data, df)
     graph_builder.build_graph()
     graph = graph_builder.graph
-    graph = graph.to_undirected()
+    
+    
     # Centrality calculation (for seed nodes)
     centralities = graph_builder.calculate_centralities()
     top_influencers = sorted(
