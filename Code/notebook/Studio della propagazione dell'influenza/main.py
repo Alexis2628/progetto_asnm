@@ -1,3 +1,4 @@
+import json  # Aggiungi questa importazione
 from utils.DataProcessor import DataProcessor
 from utils.GraphConstructor import GraphConstructor
 from models.models import Models
@@ -25,7 +26,6 @@ if __name__ == "__main__":
     graph_builder = GraphConstructor(followers_data, df)
     graph_builder.build_graph()
     graph = graph_builder.graph
-    
     
     # Centrality calculation (for seed nodes)
     centralities = graph_builder.calculate_centralities()
@@ -55,7 +55,7 @@ if __name__ == "__main__":
         print("Risultati dei modelli (ultima iterazione):")
         for model_name, result in model_results.items():
             if result and isinstance(result, dict):
-                last_step = result[list(result.keys())[-1]]  #ultima iterazione
+                last_step = result[list(result.keys())[-1]]  # ultima iterazione
                 if isinstance(last_step, set):
                     print(f"{model_name}: {len(last_step)} nodi attivi")
                 elif isinstance(last_step, dict):
@@ -73,8 +73,12 @@ if __name__ == "__main__":
             output_dir = "output/model_output"
             os.makedirs(output_dir, exist_ok=True)
             for model_name, result in model_results.items():
-                with open(os.path.join(output_dir, f"{model_name}_results.txt"), "w") as f:
-                    f.write(f"{model_name}: {result}\n")
+                result_file_path = os.path.join(output_dir, f"{model_name}_results.json" if isinstance(result, dict) else f"{model_name}_results.txt")
+                with open(result_file_path, "w") as f:
+                    if isinstance(result, dict):
+                        json.dump(result, f, indent=4)  # Salva come JSON
+                    else:
+                        f.write(f"{model_name}: {result}\n")
 
     if run_optimizers:
         # Inizializzazione dell'ottimizzatore
@@ -98,5 +102,9 @@ if __name__ == "__main__":
             output_dir = "output/algo_output"
             os.makedirs(output_dir, exist_ok=True)
             for algo_name, result in optimization_results.items():
-                with open(os.path.join(output_dir, f"{algo_name}_results.txt"), "w") as f:
-                    f.write(f"{algo_name}: {result}\n")
+                result_file_path = os.path.join(output_dir, f"{algo_name}_results.json" if isinstance(result, dict) else f"{algo_name}_results.txt")
+                with open(result_file_path, "w") as f:
+                    if isinstance(result, dict):
+                        json.dump(result, f, indent=4)  # Salva come JSON
+                    else:
+                        f.write(f"{algo_name}: {result}\n")
