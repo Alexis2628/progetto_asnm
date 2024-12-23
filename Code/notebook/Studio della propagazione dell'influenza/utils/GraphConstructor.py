@@ -1,5 +1,5 @@
 import networkx as nx
-
+import random
 
 class GraphConstructor:
     def __init__(self, user_data, df):
@@ -22,6 +22,21 @@ class GraphConstructor:
                     self.graph.add_node(follower_id, info=follower_info)
 
                 self.graph.add_edge(follower_id, int(user_id))
+            # Adding thresholds to nodes for models like Linear Threshold
+        for node in self.graph.nodes():
+            self.graph.nodes[node]["threshold"] = random.uniform(0, 1)
+
+    def trust_function(self,neighbor, node):
+        """
+        Funzione di fiducia che determina il livello di fiducia tra un nodo e il suo vicino.
+        :param neighbor: Il vicino del nodo corrente.
+        :param node: Il nodo corrente.
+        :return: Valore di fiducia tra 0 e 1.
+        """
+        weight = self.graph[node][neighbor].get("weight", 1)
+        neighbor_threshold = self.graph.nodes[neighbor].get("threshold", 0.5)
+        trust = weight * (1 - neighbor_threshold)
+        return max(0, min(trust, 1))
 
     def calculate_centralities(self):
         centralities = {

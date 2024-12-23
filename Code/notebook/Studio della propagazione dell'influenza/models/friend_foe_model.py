@@ -15,35 +15,44 @@
 
 import random
 
-
 def friend_foe_dynamic_linear_threshold(graph, seed_nodes, trust_function):
-    activated = set(seed_nodes)
-    quiescent = {}
-
-    for node in graph.nodes():
-        graph.nodes[node]["threshold"] = random.uniform(0, 1)
+    """
+    Esegue il modello Friend-Foe Dynamic Linear Threshold per una rete.
+    :param graph: Grafo con nodi e archi.
+    :param seed_nodes: Nodi iniziali (seminal nodes) da cui parte la diffusione.
+    :param trust_function: Funzione che calcola la fiducia tra due nodi.
+    :return: Nodi che sono stati attivati alla fine del processo.
+    """
+    activated = set(seed_nodes)  # I nodi iniziali che sono attivi.
 
     while True:
         new_activations = set()
+        
+        # Per ogni nodo non ancora attivo
         for node in graph.nodes():
             if node not in activated:
-                trusted_influence = sum(
-                    trust_function(neighbor, node)
-                    for neighbor in graph.predecessors(node)
-                    if neighbor in activated
-                )
-                if trusted_influence >= graph.nodes[node]["threshold"]:
-                    quiescence_time = random.uniform(0, 1)
-                    quiescent[node] = quiescence_time
+                # Somma delle influenze positive (amici) e negative (nemici)
+                positive_influence = 0
+                negative_influence = 0
+                
+                # Calcolare l'influenza da parte degli amici e nemici
+                for neighbor in graph.neighbors(node):
+                    influence = trust_function(neighbor, node)
+                    
+                    if influence > 0:
+                        positive_influence += influence
+                    elif influence < 0:
+                        negative_influence += -influence  # Negativo per nemici
+
+                # Se l'influenza netta supera la soglia del nodo, attiva il nodo
+                if positive_influence - negative_influence >= graph.nodes[node]["threshold"]:
                     new_activations.add(node)
 
+        # Se non ci sono nuove attivazioni, il processo è terminato
         if not new_activations:
             break
 
-        for node in new_activations:
-            if quiescent.get(node, 0) <= 0:
-                activated.add(node)
-            else:
-                quiescent[node] -= 0.1
+        # Aggiungi i nuovi nodi attivati
+        activated.update(new_activations)
 
     return activated

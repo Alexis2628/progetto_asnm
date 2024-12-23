@@ -8,27 +8,55 @@
 # •	Infezioni virali: Il contagio si verifica solo quando un nodo supera una certa "soglia" di esposizione.
 # Implementazione: Nel codice, la funzione simulate_gt simula la diffusione in una rete, dove ogni nodo ha una soglia e si attiva quando la somma delle probabilità degli archi che lo connettono supera questa soglia.
 # """
+
 import random
 
 
-def simulate_gt(graph, thresholds, steps):
+def simulate_gt(graph, steps, seed=None):
+    """
+    Simula la diffusione con il modello Greater-Than (GT) su un grafo.
+
+    Parametri:
+        - graph: Il grafo (networkx.DiGraph o Graph) su cui eseguire la simulazione.
+                 Ogni nodo deve avere una proprietà 'threshold' con la soglia di attivazione.
+        - steps: Numero massimo di iterazioni della simulazione.
+        - seed: Nodo iniziale da attivare (opzionale). Se None, viene scelto casualmente.
+
+    Ritorna:
+        - Un dizionario {step: num_nodi_attivi} con il numero di nodi attivati a ogni passo temporale.
+    """
+    
+    
+   
+    # Inizializza l'insieme dei nodi attivati
     activated = set()
-    seed = random.choice(list(graph.nodes))
+    seed = seed if seed is not None else random.choice(list(graph.nodes))
     activated.add(seed)
 
-    results = []
-    for _ in range(steps):
+    evolution = {}  # Traccia l'evoluzione dell'attivazione
+    evolution[0] = activated.copy()
+    
+    for step in range(1,steps+1):
         new_activated = activated.copy()
         for node in graph.nodes:
             if node not in activated:
-                active_neighbors = sum(
+                # Calcola la somma pesata delle influenze dei vicini attivi
+                influence = sum(
                     1 for neighbor in graph.neighbors(node) if neighbor in activated
-                )
-                if (
-                    graph.degree[node] > 0
-                    and active_neighbors / graph.degree[node] >= thresholds[node]
-                ):
+                ) / graph.degree[node] if graph.degree[node] > 0 else 0
+
+                # Confronta con la soglia del nodo
+                if influence >= graph.nodes[node]["threshold"]:
                     new_activated.add(node)
+
+        # Registra il numero di nodi attivi
+        evolution[step] = new_activated.copy()
+
+        # Interrompi se non ci sono nuove attivazioni
+        if new_activated == activated:
+            break
+
         activated = new_activated
-        results.append(activated.copy())
-    return results
+
+    return evolution
+

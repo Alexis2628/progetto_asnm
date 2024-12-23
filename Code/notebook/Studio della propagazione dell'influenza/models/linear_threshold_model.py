@@ -18,26 +18,28 @@
 # Implementazione: Nel codice, l'attivazione di un nodo dipende dall'influenza ricevuta dai suoi vicini. Ogni nodo ha una soglia casuale, e la propagazione continua finché ci sono nodi che possono essere attivati.
 # """
 
-
+import random
 def linear_threshold_model(graph, seed_nodes):
-    graph = graph.to_undirected()
+    # Inizializzazione dei nodi attivi
     activated = set(seed_nodes)
     newly_activated = set(seed_nodes)
-
+    
+    # Assegna l'influenza agli archi (da un nodo i ai suoi vicini diretti j)
     for node in graph.nodes():
-        neighbors = list(graph.neighbors(node))
+        neighbors = list(graph.successors(node))  # Usare successors per i vicini diretti
         if neighbors:
             weight = 1 / len(neighbors)
             for neighbor in neighbors:
                 graph.edges[node, neighbor]["influence"] = weight
 
+    # Propagazione dell'attivazione
     while newly_activated:
         next_activated = set()
         for node in graph.nodes():
             if node not in activated:
                 total_influence = sum(
                     graph.edges[neighbor, node]["influence"]
-                    for neighbor in graph.neighbors(node)
+                    for neighbor in graph.predecessors(node)  # Influenza dai predecessori
                     if neighbor in activated
                 )
                 if total_influence >= graph.nodes[node]["threshold"]:
@@ -45,4 +47,6 @@ def linear_threshold_model(graph, seed_nodes):
 
         newly_activated = next_activated
         activated.update(newly_activated)
+
     return activated
+

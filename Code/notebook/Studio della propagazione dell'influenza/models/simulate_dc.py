@@ -14,15 +14,32 @@
 
 import random
 
+def simulate_dc(graph, initial_prob, decay_factor, steps, seed=None, prob_cutoff=1e-4):
+    """
+    Simula la diffusione deterministica e caotica su un grafo.
 
-def simulate_dc(graph, initial_prob, decay_factor, steps):
+    Parametri:
+        - graph: Il grafo (networkx.DiGraph o Graph) su cui eseguire la simulazione.
+        - initial_prob: Probabilità iniziale di attivazione di un nodo.
+        - decay_factor: Fattore di decadimento della probabilità a ogni passo.
+        - steps: Numero di iterazioni della simulazione.
+        - seed: Nodo iniziale da attivare (opzionale). Se None, viene scelto casualmente.
+        - prob_cutoff: Soglia sotto la quale la probabilità è considerata trascurabile.
+
+    Ritorna:
+        - Un dizionario contenente l'insieme dei nodi attivati a ogni passo, con lo step come chiave.
+    """
     activated = set()
-    seed = random.choice(list(graph.nodes))
+    seed = seed if seed is not None else random.choice(list(graph.nodes))
     activated.add(seed)
 
     prob = initial_prob
-    results = []
-    for _ in range(steps):
+    evolution = {}  # Traccia l'evoluzione dell'attivazione
+    evolution[0] = activated.copy()
+    for step in range(1,steps+1):
+        if prob < prob_cutoff:  # Interrompi se la probabilità è troppo bassa
+            break
+        
         new_activated = activated.copy()
         for node in graph.nodes:
             if node not in activated:
@@ -30,7 +47,9 @@ def simulate_dc(graph, initial_prob, decay_factor, steps):
                     if neighbor in activated and random.random() < prob:
                         new_activated.add(node)
                         break
+
         activated = new_activated
-        prob *= decay_factor
-        results.append(activated.copy())
-    return results
+        evolution[step] = activated.copy()
+        prob *= decay_factor  # Decay della probabilità
+
+    return evolution
