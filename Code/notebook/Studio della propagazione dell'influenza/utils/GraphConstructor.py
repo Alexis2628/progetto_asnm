@@ -1,28 +1,30 @@
 import networkx as nx
 import random
-
+import json 
 class GraphConstructor:
-    def __init__(self, user_data, df):
-        self.user_data = user_data
-        self.df = df
+    def __init__(self, followers_path = "../../data/final_dataset.json"):
+        with open(followers_path , "rb") as f:
+            self.user_data = json.load(f)
         self.graph = nx.DiGraph()
 
     def build_graph(self):
-        for user_id, user_data in self.user_data.items():
-            user_info = self.df.loc[self.df['user_id'] == int(user_id)].to_dict(orient='records')
-            
-            if not self.graph.has_node(int(user_id)):
-                self.graph.add_node(int(user_id), info=user_info)
+        for user_id, user_info in self.user_data.items():
+            user_id = int(user_id)
 
-            for follower in user_data.get("followers", []):
+            # Aggiungi il nodo per l'utente
+            if not self.graph.has_node(user_id):
+                self.graph.add_node(user_id, username=user_info.get("username", ""), user_data=user_info.get("user_data", []))
+
+            # Aggiungi i follower come nodi e crea archi
+            for follower in user_info.get("followers", []):
                 follower_id = int(follower["user_id"])
-                follower_info = self.df.loc[self.df['user_id'] == follower_id].to_dict(orient='records')
 
                 if not self.graph.has_node(follower_id):
-                    self.graph.add_node(follower_id, info=follower_info)
+                    self.graph.add_node(follower_id, username=follower.get("username", ""), user_data=follower.get("user_data", []))
 
-                self.graph.add_edge(follower_id, int(user_id))
-            # Adding thresholds to nodes for models like Linear Threshold
+                self.graph.add_edge(follower_id, user_id)
+
+        # Aggiungi soglie casuali per ogni nodo
         for node in self.graph.nodes():
             self.graph.nodes[node]["threshold"] = random.uniform(0, 1)
 

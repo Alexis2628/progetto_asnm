@@ -34,6 +34,7 @@ class PostDataHandler:
         return ids
 
     def collect_posts_by_queries(self, queries: list, iterations_per_query: int = 1):
+        
         filename = self.post_data_csv
         seen_post_ids = self.get_existing_ids(self.existing_posts.copy())
         all_posts = self.existing_posts.copy()

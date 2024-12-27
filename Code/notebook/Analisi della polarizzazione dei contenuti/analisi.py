@@ -1,11 +1,17 @@
 import os
 import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
+import torch
+# nltk.download('punkt')
+# nltk.download('stopwords')
 import logging
+from gensim.corpora.dictionary import Dictionary
+from gensim.models.ldamodel import LdaModel
+import pyLDAvis
+import pyLDAvis.gensim_models
 import numpy as np
+from transformers import pipeline
 from matplotlib import pyplot as plt
-from utils.GraphConstructor import GraphConstructor
+from graph.GraphConstructor import GraphConstructor
 from textblob import TextBlob
 from wordcloud import WordCloud
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -165,6 +171,37 @@ class ContentPolarizationAnalyzer:
 
         logging.info(f"Temi polarizzanti identificati: {polarizing_words}.")
         return list(set(polarizing_words))
+    
+    def perform_sentiment_analysis_huggingface(self, user_opinions, threshold_neutral=0.3):
+        """
+        Analizza il sentiment dei testi degli utenti utilizzando un modello di Hugging Face.
+        :param user_opinions: Dizionario {user_id: testo_completo}.
+        :param threshold_neutral: Soglia per classificare sentiment neutrale (range 0.0 - 1.0).
+        :return: Dizionario {user_id: {"sentiment": sentiment_label, "score": sentiment_score}}.
+        """
+        logging.info("Inizio analisi del sentiment con Hugging Face.")
+        device = 0 if torch.cuda.is_available() else -1
+        logging.info(f"Utilizzando dispositivo: {'GPU' if device == 0 else 'CPU'}")
+        # Carica il pipeline di sentiment analysis
+        sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english",device=device)
+
+        sentiment_scores = {}
+        for user_id, text in user_opinions.items():
+            # Esegui l'analisi del sentiment
+            result = sentiment_pipeline(text[:512])  # Limite di 512 token per il modello
+            label = result[0]['label']  # "POSITIVE" o "NEGATIVE"
+            score = result[0]['score']  # Confidenza del modello
+
+            # Classifica il risultato in base alla soglia neutrale
+            if score < threshold_neutral:
+                sentiment_label = "NEUTRAL"
+            else:
+                sentiment_label = label
+
+            sentiment_scores[user_id] = {"sentiment": sentiment_label, "score": score}
+
+        logging.info("Analisi del sentiment con Hugging Face completata.")
+        return sentiment_scores
 
     def visualize_polarizing_themes(self, polarizing_words):
         """
@@ -183,6 +220,39 @@ class ContentPolarizationAnalyzer:
         plt.savefig(output_path)
         logging.info(f"Word cloud salvata in: {output_path}")
         plt.close()
+        
+    def perform_topic_modeling(self, user_opinions, num_topics=5):
+        """
+        Identifica i temi principali utilizzando LDA.
+        :param user_opinions: Dizionario {user_id: testo_completo}.
+        :param num_topics: Numero di temi da identificare.
+        :return: Modello LDA e dizionario dei dati.
+        """
+        logging.info("Esecuzione del topic modeling con LDA.")
+        
+        # Pre-elabora i testi e prepara i dati per l'LDA
+        texts = [self.preprocess_text(opinion).split() for opinion in user_opinions.values()]
+        dictionary = Dictionary(texts)
+        corpus = [dictionary.doc2bow(text) for text in texts]
+        
+        # Addestra il modello LDA
+        lda_model = LdaModel(corpus=corpus, num_topics=num_topics, id2word=dictionary, random_state=42)
+        
+        logging.info(f"Modello LDA addestrato con {num_topics} temi.")
+        return lda_model, dictionary, corpus
+    
+    def visualize_topics(self, lda_model, corpus, dictionary):
+        """
+        Visualizza i temi principali utilizzando pyLDAvis.
+        :param lda_model: Modello LDA.
+        :param corpus: Corpus utilizzato per addestrare il modello.
+        :param dictionary: Dizionario di termini.
+        """
+        logging.info("Visualizzazione dei temi con pyLDAvis.")
+        vis = pyLDAvis.gensim_models.prepare(lda_model, corpus, dictionary)
+        output_path = os.path.join(self.output_dir, "lda_visualization.html")
+        pyLDAvis.save_html(vis, output_path)
+        logging.info(f"Visualizzazione dei temi salvata in: {output_path}")
 
 
 if __name__ == "__main__":
@@ -193,6 +263,11 @@ if __name__ == "__main__":
     analyzer = ContentPolarizationAnalyzer(graph)
     user_opinions = analyzer.extract_user_opinions()
     # Analisi del sentiment
+    # sentiment_scores_hf = analyzer.perform_sentiment_analysis_huggingface(user_opinions, threshold_neutral=0.3)
+    # for i ,(user_id, sentiment) in enumerate(sentiment_scores_hf.items()):
+    #     if i == 10:
+    #         break
+    #     logging.info(f"User: {user_id}, Sentiment: {sentiment['sentiment']}, Score: {sentiment['score']}")
     sentiment_scores = analyzer.perform_sentiment_analysis(user_opinions)
     # Clustering degli utenti
     cluster_labels = analyzer.cluster_users(user_opinions, method="dbscan")
@@ -200,5 +275,10 @@ if __name__ == "__main__":
     analyzer.visualize_clusters(user_opinions, cluster_labels)
     # Identifica e visualizza i temi polarizzanti
     polarizing_themes = analyzer.identify_polarizing_themes(user_opinions, cluster_labels)
-    logging.info("Polarizing Themes: %s", polarizing_themes)
     analyzer.visualize_polarizing_themes(polarizing_themes)
+    
+     # Identifica i temi principali utilizzando il topic modeling
+    lda_model, dictionary, corpus = analyzer.perform_topic_modeling(user_opinions, num_topics=len(set(list(cluster_labels))))
+    
+    # Visualizza i temi identificati
+    analyzer.visualize_topics(lda_model, corpus, dictionary)

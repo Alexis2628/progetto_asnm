@@ -1,10 +1,15 @@
 import json  # Aggiungi questa importazione
-from utils.DataProcessor import DataProcessor
 from utils.GraphConstructor import GraphConstructor
 from models.models import Models
 from optimizers.optimizer import Optimizer
-import random
 import os
+import json  # Aggiungi questa importazione
+
+def convert_sets_in_dict(d):
+    """
+    Funzione che converte i set in liste in un dizionario.
+    """
+    return {k: list(v) if isinstance(v, set) else v for k, v in d.items()}
 
 if __name__ == "__main__":
     # Parametri per eseguire modelli e ottimizzatori
@@ -13,17 +18,10 @@ if __name__ == "__main__":
     save_to_file = False
     steps = 100
     # Paths to data files
-    posts_path = "../../../data/post_data.csv"
-    replies_path = "../../../data/replies_data.csv"
-    followers_path = "../../../data/output.json"
-
-    # Data processing
-    processor = DataProcessor(posts_path, replies_path, followers_path)
-    df_posts, df_replies, followers_data = processor.load_data()
-    df = processor.preprocess_data(df_posts, df_replies)
+    
 
     # Graph construction
-    graph_builder = GraphConstructor(followers_data, df)
+    graph_builder = GraphConstructor()
     graph_builder.build_graph()
     graph = graph_builder.graph
     
@@ -75,7 +73,12 @@ if __name__ == "__main__":
             for model_name, result in model_results.items():
                 result_file_path = os.path.join(output_dir, f"{model_name}_results.json" if isinstance(result, dict) else f"{model_name}_results.txt")
                 with open(result_file_path, "w") as f:
+                    # Se il risultato è un set, lo converto in una lista prima di salvarlo come JSON
+                    if isinstance(result, set):
+                        result = list(result)
+                    # Se è un dizionario, converto i set in liste e salvo come JSON
                     if isinstance(result, dict):
+                        result = convert_sets_in_dict(result)  # Converti i set in liste
                         json.dump(result, f, indent=4)  # Salva come JSON
                     else:
                         f.write(f"{model_name}: {result}\n")
@@ -104,7 +107,12 @@ if __name__ == "__main__":
             for algo_name, result in optimization_results.items():
                 result_file_path = os.path.join(output_dir, f"{algo_name}_results.json" if isinstance(result, dict) else f"{algo_name}_results.txt")
                 with open(result_file_path, "w") as f:
+                    # Se il risultato è un set, lo converto in una lista prima di salvarlo come JSON
+                    if isinstance(result, set):
+                        result = list(result)
+                    # Se è un dizionario, converto i set in liste e salvo come JSON
                     if isinstance(result, dict):
+                        result = convert_sets_in_dict(result)  # Converti i set in liste
                         json.dump(result, f, indent=4)  # Salva come JSON
                     else:
                         f.write(f"{algo_name}: {result}\n")
