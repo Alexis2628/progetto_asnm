@@ -8,14 +8,19 @@ class Clustering:
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.model = BertModel.from_pretrained('bert-base-uncased')
 
-    def embed_texts(self, texts):
-        inputs = self.tokenizer(texts, return_tensors='pt')
-        with torch.no_grad():
-            outputs = self.model(**inputs)
-        embeddings = outputs.last_hidden_state.mean(dim=1)
-        return embeddings
+    def embed_texts(self, texts, batch_size=32):
+        embeddings = []
+        for i in range(0, len(texts), batch_size):
+            batch_texts = texts[i:i + batch_size]
+            inputs = self.tokenizer(batch_texts, return_tensors='pt', padding=True, truncation=True)
+            with torch.no_grad():
+                outputs = self.model(**inputs)
+            batch_embeddings = outputs.last_hidden_state.mean(dim=1)
+            embeddings.append(batch_embeddings)
+        return torch.cat(embeddings, dim=0)
 
-    def cluster(self, user_opinions, method="kmeans", n_clusters=5):
+
+    def cluster(self, user_opinions, method="kmeans", n_clusters=20):
         texts = list(user_opinions.values())
         embeddings = self.embed_texts(texts)
         if method == "kmeans":
