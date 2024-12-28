@@ -1,0 +1,1014 @@
+2024-12-28 19:17:53,751 - INFO - Recupero follower per follower_id: 531758406 con n°0
+2024-12-28 19:17:54,992 - INFO - Recupero follower per follower_id: 60850232106 con n°0
+2024-12-28 19:17:55,509 - INFO - Recupero follower per follower_id: 55968501995 con n°0
+2024-12-28 19:17:56,298 - INFO - Recupero follower per follower_id: 60628346710 con n°0
+2024-12-28 19:17:57,173 - INFO - Recupero follower per follower_id: 65391034968 con n°0
+2024-12-28 19:17:57,964 - INFO - Recupero follower per follower_id: 55178050501 con n°1
+2024-12-28 19:17:58,527 - INFO - Recupero follower per follower_id: 64379260940 con n°0
+2024-12-28 19:17:59,870 - INFO - Recupero follower per follower_id: 262856836 con n°0
+2024-12-28 19:18:01,251 - INFO - Recupero follower per follower_id: 54579428206 con n°0
+2024-12-28 19:18:02,393 - INFO - Recupero follower per follower_id: 56714285656 con n°0
+2024-12-28 19:18:03,958 - INFO - Recupero follower per follower_id: 34158564957 con n°0
+2024-12-28 19:18:05,594 - INFO - Recupero follower per follower_id: 50656527917 con n°0
+2024-12-28 19:18:06,247 - INFO - Recupero follower per follower_id: 62233317658 con n°1
+2024-12-28 19:18:07,320 - INFO - Recupero follower per follower_id: 1795971330 con n°1
+2024-12-28 19:18:08,511 - INFO - Recupero follower per follower_id: 3098195771 con n°1
+2024-12-28 19:18:09,680 - INFO - Recupero follower per follower_id: 33498315874 con n°0
+2024-12-28 19:18:11,377 - INFO - Recupero follower per follower_id: 51524079790 con n°0
+2024-12-28 19:18:12,970 - INFO - Recupero follower per follower_id: 65242802457 con n°0
+2024-12-28 19:18:14,047 - INFO - Recupero follower per follower_id: 58086058382 con n°0
+2024-12-28 19:18:15,401 - INFO - Recupero follower per follower_id: 53982955686 con n°0
+2024-12-28 19:18:16,551 - INFO - Recupero follower per follower_id: 62619594223 con n°1
+2024-12-28 19:18:17,536 - INFO - Recupero follower per follower_id: 6267328541 con n°1
+2024-12-28 19:18:18,814 - INFO - Recupero follower per follower_id: 67115637172 con n°3
+2024-12-28 19:18:20,043 - INFO - Recupero follower per follower_id: 67038712330 con n°0
+2024-12-28 19:18:21,266 - INFO - Recupero follower per follower_id: 67281319268 con n°0
+2024-12-28 19:18:22,692 - INFO - Recupero follower per follower_id: 65360210258 con n°1
+2024-12-28 19:18:23,878 - INFO - Recupero follower per follower_id: 67592464790 con n°3
+2024-12-28 19:18:25,359 - INFO - Recupero follower per follower_id: 69002489097 con n°3
+2024-12-28 19:18:26,141 - INFO - Recupero follower per follower_id: 70690130037 con n°0
+2024-12-28 19:18:28,339 - INFO - Recupero follower per follower_id: 49519786147 con n°0
+2024-12-28 19:18:28,647 - WARNING - Raggiunto il limite massimo di richieste (30). Interrompendo ulteriori richieste.
+2024-12-28 19:18:28,688 - WARNING - Raggiunto il limite massimo di richieste (30). Interrompendo ulteriori richieste.
+2024-12-28 19:18:39,514 - INFO - Dataset aggiornato salvato in 'notebook//Analisi della polarizzazione dei contenuti//graph//updated.json'.
+2024-12-28 19:19:29,792 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,796 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,800 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,801 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,802 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,803 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,803 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,804 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,805 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,805 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,806 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,807 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,808 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,808 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,809 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,809 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,809 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,810 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,810 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,811 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,811 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,812 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,812 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,813 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,813 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,813 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,814 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,815 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,815 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:29,816 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:19:30,592 - INFO - Recupero follower per follower_id: 4023341285 con n°0
+2024-12-28 19:19:31,153 - INFO - Recupero follower per follower_id: 6053618475 con n°0
+2024-12-28 19:19:31,678 - INFO - Recupero follower per follower_id: 69822893255 con n°0
+2024-12-28 19:19:32,934 - INFO - Recupero follower per follower_id: 63959794645 con n°0
+2024-12-28 19:19:34,137 - INFO - Recupero follower per follower_id: 8611865700 con n°0
+2024-12-28 19:19:35,286 - INFO - Recupero follower per follower_id: 635836312 con n°0
+2024-12-28 19:19:36,308 - INFO - Recupero follower per follower_id: 65767865400 con n°0
+2024-12-28 19:19:37,203 - INFO - Recupero follower per follower_id: 32882873105 con n°0
+2024-12-28 19:19:39,303 - INFO - Recupero follower per follower_id: 4266037558 con n°0
+2024-12-28 19:19:40,798 - INFO - Recupero follower per follower_id: 70245543127 con n°0
+2024-12-28 19:19:41,516 - INFO - Recupero follower per follower_id: 60089084248 con n°0
+2024-12-28 19:19:42,032 - INFO - Recupero follower per follower_id: 64568406435 con n°0
+2024-12-28 19:19:43,204 - INFO - Recupero follower per follower_id: 62496872860 con n°0
+2024-12-28 19:19:44,104 - INFO - Recupero follower per follower_id: 58904352841 con n°0
+2024-12-28 19:19:45,386 - INFO - Recupero follower per follower_id: 37591806435 con n°0
+2024-12-28 19:19:46,523 - INFO - Recupero follower per follower_id: 4478716867 con n°0
+2024-12-28 19:19:47,740 - INFO - Recupero follower per follower_id: 7175027371 con n°0
+2024-12-28 19:19:48,724 - INFO - Recupero follower per follower_id: 18488129930 con n°0
+2024-12-28 19:19:50,158 - INFO - Recupero follower per follower_id: 58434001614 con n°0
+2024-12-28 19:19:51,035 - INFO - Recupero follower per follower_id: 11816871845 con n°2
+2024-12-28 19:19:52,961 - INFO - Recupero follower per follower_id: 36797143511 con n°0
+2024-12-28 19:19:54,045 - INFO - Recupero follower per follower_id: 497112339 con n°1
+2024-12-28 19:19:55,097 - INFO - Recupero follower per follower_id: 318005933 con n°0
+2024-12-28 19:19:55,838 - INFO - Recupero follower per follower_id: 1944910755 con n°1
+2024-12-28 19:19:56,739 - INFO - Recupero follower per follower_id: 54324637400 con n°0
+2024-12-28 19:19:58,177 - INFO - Recupero follower per follower_id: 9231843386 con n°2
+2024-12-28 19:19:59,585 - INFO - Recupero follower per follower_id: 2036259304 con n°0
+2024-12-28 19:20:00,663 - INFO - Recupero follower per follower_id: 4742620867 con n°0
+2024-12-28 19:20:01,570 - INFO - Recupero follower per follower_id: 6164989895 con n°0
+2024-12-28 19:20:02,295 - INFO - Recupero follower per follower_id: 31569435269 con n°0
+2024-12-28 19:20:02,299 - WARNING - Raggiunto il limite massimo di richieste (30). Interrompendo ulteriori richieste.
+2024-12-28 19:20:02,305 - WARNING - Raggiunto il limite massimo di richieste (30). Interrompendo ulteriori richieste.
+2024-12-28 19:20:11,200 - INFO - Dataset aggiornato salvato in 'notebook//Analisi della polarizzazione dei contenuti//graph//updated.json'.
+2024-12-28 19:20:17,344 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,409 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,417 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,420 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,425 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,429 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,440 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,443 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,445 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,451 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,452 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,454 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,455 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,456 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,457 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,457 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,457 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,457 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,458 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,459 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,459 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,460 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,460 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,460 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,461 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,461 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,462 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,462 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,462 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,463 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,463 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,464 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,464 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,464 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,465 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,466 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,467 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,471 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,476 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,480 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,486 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,489 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,495 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,508 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,511 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,515 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,522 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,535 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,543 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,544 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,546 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,547 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,551 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,554 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,554 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,559 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,560 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,561 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,562 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:17,562 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:20:18,950 - INFO - Recupero follower per follower_id: 494862188 con n°0
+2024-12-28 19:20:19,877 - INFO - Recupero follower per follower_id: 1566341300 con n°0
+2024-12-28 19:20:20,801 - INFO - Recupero follower per follower_id: 586576035 con n°0
+2024-12-28 19:20:22,135 - INFO - Recupero follower per follower_id: 290077274 con n°0
+2024-12-28 19:20:22,999 - INFO - Recupero follower per follower_id: 3289958773 con n°0
+2024-12-28 19:20:24,591 - INFO - Recupero follower per follower_id: 202036779 con n°0
+2024-12-28 19:20:26,461 - INFO - Recupero follower per follower_id: 6206537530 con n°0
+2024-12-28 19:20:27,382 - INFO - Recupero follower per follower_id: 241619877 con n°1
+2024-12-28 19:20:28,451 - INFO - Recupero follower per follower_id: 8478194452 con n°0
+2024-12-28 19:20:29,367 - INFO - Recupero follower per follower_id: 38594327 con n°0
+2024-12-28 19:20:30,374 - INFO - Recupero follower per follower_id: 4054448007 con n°0
+2024-12-28 19:20:31,993 - INFO - Recupero follower per follower_id: 8754667816 con n°0
+2024-12-28 19:20:33,105 - INFO - Recupero follower per follower_id: 16950816919 con n°0
+2024-12-28 19:20:33,876 - INFO - Recupero follower per follower_id: 308534271 con n°0
+2024-12-28 19:20:34,737 - INFO - Recupero follower per follower_id: 4505793037 con n°1
+2024-12-28 19:20:35,514 - INFO - Recupero follower per follower_id: 38202437 con n°0
+2024-12-28 19:20:36,877 - INFO - Recupero follower per follower_id: 8947694960 con n°1
+2024-12-28 19:20:37,945 - INFO - Recupero follower per follower_id: 553016573 con n°0
+2024-12-28 19:20:38,845 - INFO - Recupero follower per follower_id: 2280680381 con n°0
+2024-12-28 19:20:39,643 - INFO - Recupero follower per follower_id: 48676890 con n°0
+2024-12-28 19:20:40,949 - INFO - Recupero follower per follower_id: 7124161885 con n°0
+2024-12-28 19:20:43,205 - INFO - Recupero follower per follower_id: 370642029 con n°0
+2024-12-28 19:20:44,469 - INFO - Recupero follower per follower_id: 146235483 con n°0
+2024-12-28 19:20:45,418 - INFO - Recupero follower per follower_id: 3020058788 con n°0
+2024-12-28 19:20:46,965 - INFO - Recupero follower per follower_id: 51513996845 con n°0
+2024-12-28 19:20:47,991 - INFO - Recupero follower per follower_id: 492105513 con n°0
+2024-12-28 19:20:49,192 - INFO - Recupero follower per follower_id: 1952492130 con n°1
+2024-12-28 19:20:50,336 - INFO - Recupero follower per follower_id: 61975126348 con n°0
+2024-12-28 19:20:51,646 - INFO - Recupero follower per follower_id: 67575164469 con n°0
+2024-12-28 19:20:53,198 - INFO - Recupero follower per follower_id: 70107501522 con n°0
+2024-12-28 19:20:53,198 - WARNING - Raggiunto il limite massimo di richieste (30). Interrompendo ulteriori richieste.
+2024-12-28 19:20:53,199 - WARNING - Raggiunto il limite massimo di richieste (30). Interrompendo ulteriori richieste.
+2024-12-28 19:21:04,868 - INFO - Dataset aggiornato salvato in 'notebook//Analisi della polarizzazione dei contenuti//graph//updated.json'.
+2024-12-28 19:21:09,595 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,614 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,616 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,642 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,643 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,644 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,644 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,644 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,645 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,646 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,647 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,647 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,671 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,672 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,672 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,672 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,685 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,685 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,686 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,688 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,692 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,694 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,695 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,696 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,696 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,696 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,700 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,701 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,701 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,701 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,702 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,702 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,703 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,704 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,705 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,705 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,707 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,708 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,708 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,709 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,735 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,736 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,737 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,741 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,745 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,763 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,764 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,764 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,764 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,765 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,766 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,766 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,767 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,768 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,768 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,770 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,770 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,771 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,771 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,835 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,853 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,860 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,861 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,861 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,862 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,862 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,862 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,862 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,886 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,887 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,888 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,888 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,902 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,903 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,904 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,904 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,904 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,905 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,905 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,905 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,906 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,906 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,906 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,906 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,907 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,907 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,908 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,908 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,908 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:09,908 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:21:11,147 - INFO - Recupero follower per follower_id: 69002489097 con n°3
+2024-12-28 19:21:12,404 - INFO - Recupero follower per follower_id: 68185639271 con n°3
+2024-12-28 19:21:13,645 - INFO - Recupero follower per follower_id: 9132487662 con n°1
+2024-12-28 19:21:14,801 - INFO - Recupero follower per follower_id: 64663554866 con n°4
+2024-12-28 19:21:15,952 - INFO - Recupero follower per follower_id: 33227963881 con n°1
+2024-12-28 19:21:16,965 - INFO - Recupero follower per follower_id: 64742589392 con n°2
+2024-12-28 19:21:18,075 - INFO - Recupero follower per follower_id: 67974267145 con n°5
+2024-12-28 19:21:19,450 - INFO - Recupero follower per follower_id: 3432159842 con n°0
+2024-12-28 19:21:21,428 - INFO - Recupero follower per follower_id: 6009023818 con n°0
+2024-12-28 19:21:22,341 - INFO - Recupero follower per follower_id: 8108280637 con n°0
+2024-12-28 19:21:23,471 - INFO - Recupero follower per follower_id: 1208105319 con n°0
+2024-12-28 19:21:24,936 - INFO - Recupero follower per follower_id: 45206400704 con n°0
+2024-12-28 19:21:26,375 - INFO - Recupero follower per follower_id: 206018845 con n°0
+2024-12-28 19:21:27,900 - INFO - Recupero follower per follower_id: 1901363835 con n°0
+2024-12-28 19:21:29,204 - INFO - Recupero follower per follower_id: 1604662723 con n°0
+2024-12-28 19:21:30,136 - INFO - Recupero follower per follower_id: 1573516762 con n°0
+2024-12-28 19:21:30,874 - INFO - Recupero follower per follower_id: 51115300 con n°0
+2024-12-28 19:21:32,061 - INFO - Recupero follower per follower_id: 462742060 con n°0
+2024-12-28 19:21:33,233 - INFO - Recupero follower per follower_id: 3517783983 con n°0
+2024-12-28 19:21:34,422 - INFO - Recupero follower per follower_id: 1550810665 con n°0
+2024-12-28 19:21:35,169 - INFO - Recupero follower per follower_id: 871008079 con n°0
+2024-12-28 19:21:35,930 - INFO - Recupero follower per follower_id: 4039026617 con n°0
+2024-12-28 19:21:37,136 - INFO - Recupero follower per follower_id: 3895066931 con n°0
+2024-12-28 19:21:38,320 - INFO - Recupero follower per follower_id: 47609314185 con n°0
+2024-12-28 19:21:39,471 - INFO - Recupero follower per follower_id: 2295948356 con n°1
+2024-12-28 19:21:40,983 - ERROR - Errore durante il recupero dei follower per follower_id 4451904775: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:42,014 - ERROR - Errore durante il recupero dei follower per follower_id 69768516503: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:43,395 - ERROR - Errore durante il recupero dei follower per follower_id 70390699831: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:44,075 - ERROR - Errore durante il recupero dei follower per follower_id 68357860993: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:44,770 - ERROR - Errore durante il recupero dei follower per follower_id 69770820879: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:45,804 - ERROR - Errore durante il recupero dei follower per follower_id 69816952316: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:46,585 - ERROR - Errore durante il recupero dei follower per follower_id 7182123254: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:47,363 - ERROR - Errore durante il recupero dei follower per follower_id 9036822529: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:47,969 - ERROR - Errore durante il recupero dei follower per follower_id 2464302502: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:48,635 - ERROR - Errore durante il recupero dei follower per follower_id 56201789017: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:49,425 - ERROR - Errore durante il recupero dei follower per follower_id 8577298540: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:50,049 - ERROR - Errore durante il recupero dei follower per follower_id 2905231255: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:50,741 - ERROR - Errore durante il recupero dei follower per follower_id 3028426992: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:51,386 - ERROR - Errore durante il recupero dei follower per follower_id 61500212052: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:52,070 - ERROR - Errore durante il recupero dei follower per follower_id 7984557454: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:52,786 - ERROR - Errore durante il recupero dei follower per follower_id 2008178751: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:53,416 - ERROR - Errore durante il recupero dei follower per follower_id 35799324291: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:54,111 - ERROR - Errore durante il recupero dei follower per follower_id 60349999834: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:55,034 - ERROR - Errore durante il recupero dei follower per follower_id 39929300: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:55,747 - ERROR - Errore durante il recupero dei follower per follower_id 1826947729: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:56,884 - ERROR - Errore durante il recupero dei follower per follower_id 418167192: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:58,090 - ERROR - Errore durante il recupero dei follower per follower_id 1751917742: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:21:59,565 - ERROR - Errore durante il recupero dei follower per follower_id 308260982: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:00,813 - ERROR - Errore durante il recupero dei follower per follower_id 53557878612: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:01,924 - ERROR - Errore durante il recupero dei follower per follower_id 50447373530: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:02,648 - ERROR - Errore durante il recupero dei follower per follower_id 50340701728: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:03,420 - ERROR - Errore durante il recupero dei follower per follower_id 5798486275: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:04,353 - ERROR - Errore durante il recupero dei follower per follower_id 19128307015: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:05,056 - ERROR - Errore durante il recupero dei follower per follower_id 3560050423: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:05,845 - ERROR - Errore durante il recupero dei follower per follower_id 5840735862: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:07,424 - ERROR - Errore durante il recupero dei follower per follower_id 53307510191: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:08,853 - ERROR - Errore durante il recupero dei follower per follower_id 37041320444: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:09,557 - ERROR - Errore durante il recupero dei follower per follower_id 22740992706: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:10,327 - ERROR - Errore durante il recupero dei follower per follower_id 70355192460: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:11,138 - ERROR - Errore durante il recupero dei follower per follower_id 62545893179: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:11,825 - ERROR - Errore durante il recupero dei follower per follower_id 3238701780: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:12,551 - ERROR - Errore durante il recupero dei follower per follower_id 65173480148: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:13,287 - ERROR - Errore durante il recupero dei follower per follower_id 47063030: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:13,851 - ERROR - Errore durante il recupero dei follower per follower_id 4064615149: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:14,509 - ERROR - Errore durante il recupero dei follower per follower_id 69427449945: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:15,118 - ERROR - Errore durante il recupero dei follower per follower_id 53892820343: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:15,813 - ERROR - Errore durante il recupero dei follower per follower_id 14889281679: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:16,504 - ERROR - Errore durante il recupero dei follower per follower_id 2223606297: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:17,099 - ERROR - Errore durante il recupero dei follower per follower_id 45441447647: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:18,021 - ERROR - Errore durante il recupero dei follower per follower_id 70565933509: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:18,666 - ERROR - Errore durante il recupero dei follower per follower_id 60194348963: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:19,344 - ERROR - Errore durante il recupero dei follower per follower_id 56367819325: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:20,086 - ERROR - Errore durante il recupero dei follower per follower_id 49325457696: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:20,983 - ERROR - Errore durante il recupero dei follower per follower_id 3261154510: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:21,686 - ERROR - Errore durante il recupero dei follower per follower_id 7158518315: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:22,964 - ERROR - Errore durante il recupero dei follower per follower_id 1259313668: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:23,663 - ERROR - Errore durante il recupero dei follower per follower_id 51527903095: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:24,485 - ERROR - Errore durante il recupero dei follower per follower_id 66311019730: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:25,148 - ERROR - Errore durante il recupero dei follower per follower_id 61212167643: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:25,754 - ERROR - Errore durante il recupero dei follower per follower_id 55556495097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:26,469 - ERROR - Errore durante il recupero dei follower per follower_id 18737263847: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:27,128 - ERROR - Errore durante il recupero dei follower per follower_id 13786404111: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:27,770 - ERROR - Errore durante il recupero dei follower per follower_id 2036236189: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:28,593 - ERROR - Errore durante il recupero dei follower per follower_id 5318331248: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:29,265 - ERROR - Errore durante il recupero dei follower per follower_id 32791505565: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:29,902 - ERROR - Errore durante il recupero dei follower per follower_id 53722241845: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:30,489 - ERROR - Errore durante il recupero dei follower per follower_id 33393641668: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:31,217 - ERROR - Errore durante il recupero dei follower per follower_id 70370137711: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:31,826 - ERROR - Errore durante il recupero dei follower per follower_id 64129011392: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:22:32,398 - ERROR - Errore durante il recupero dei follower per follower_id 64669916686: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:26:27,990 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,994 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,996 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,997 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,997 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,998 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,998 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,999 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:27,999 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,000 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,000 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,001 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,001 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,002 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,002 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,004 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,004 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,004 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,007 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,008 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,008 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,009 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,009 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,010 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,010 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,011 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,011 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,012 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,012 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,012 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,013 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,013 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,014 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,014 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,014 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,015 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,015 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,015 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,016 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,016 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,017 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,018 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,018 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,019 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,019 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,019 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,021 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,021 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,022 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,022 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,022 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,024 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,024 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,025 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,025 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,025 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,026 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,027 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,027 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,028 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,028 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,029 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,029 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,030 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,030 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,031 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,031 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,031 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,032 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,033 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,033 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,034 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,035 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,036 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,037 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,038 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,038 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,039 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,040 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,041 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,042 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,042 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,043 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,043 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,044 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,045 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,045 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,046 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,047 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,047 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:26:28,733 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:26:29,375 - ERROR - Errore durante il recupero dei follower per follower_id 68185639271: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:06,797 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,799 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,799 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,799 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,799 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,800 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,800 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,801 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,801 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,801 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,801 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,802 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,802 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,802 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,802 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,805 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,807 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,807 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,808 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,808 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,808 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,809 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,809 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,809 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,810 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,810 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,811 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,811 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,811 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,812 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,812 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,812 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,813 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,813 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,813 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,815 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,815 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,816 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,816 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,816 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,817 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,818 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,818 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,818 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,819 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,820 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,820 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,821 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,821 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,821 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,822 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,822 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,823 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,823 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,823 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,824 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,824 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,825 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,825 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,826 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,826 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,826 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,827 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,827 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,828 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,829 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,829 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,830 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,830 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,831 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,832 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,832 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,833 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,835 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,836 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,837 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,838 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,839 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,839 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,840 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,840 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,842 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,843 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,843 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,844 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,845 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,846 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,847 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,847 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:06,848 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:07,673 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:07,674 - CRITICAL - Errore critico: 
+2024-12-28 19:29:09,160 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,161 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,161 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,161 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,162 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,162 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,163 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,163 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,163 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,164 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,165 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,165 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,165 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,166 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,166 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,166 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,167 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,167 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,168 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,168 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,169 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,169 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,169 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,171 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,171 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,172 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,172 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,172 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,172 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,173 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,173 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,174 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,174 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,174 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,175 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,175 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,176 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,178 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,178 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,179 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,179 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,180 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,180 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,181 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,181 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,182 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,182 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,183 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,184 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,184 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,185 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,185 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,186 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,186 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,188 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,188 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,189 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,190 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,190 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,191 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,191 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,192 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,192 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,193 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,194 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,196 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,197 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,198 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,198 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,199 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,199 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,200 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,201 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,205 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,207 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,207 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,208 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,209 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,211 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,213 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,214 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,214 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,215 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,216 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,217 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,219 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,220 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,221 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,225 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,225 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:09,956 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:09,957 - CRITICAL - Errore critico: 
+2024-12-28 19:29:11,220 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,220 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,221 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,222 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,222 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,222 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,223 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,223 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,224 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,225 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,225 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,226 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,226 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,227 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,227 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,228 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,228 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,229 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,230 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,230 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,231 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,231 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,232 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,233 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,233 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,234 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,234 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,235 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,235 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,236 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,236 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,237 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,238 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,238 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,239 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,239 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,240 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,240 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,240 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,241 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,242 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,242 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,243 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,243 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,244 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,244 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,245 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,245 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,246 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,246 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,246 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,247 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,247 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,248 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,248 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,249 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,249 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,250 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,251 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,252 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,253 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,254 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,255 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,255 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,256 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,257 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,258 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,259 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,260 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,261 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,262 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,263 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,267 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,268 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,269 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,269 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,270 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,271 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,271 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,272 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,273 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,274 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,275 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,275 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,277 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,278 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,280 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,282 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,282 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,283 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:11,903 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:11,904 - CRITICAL - Errore critico: 
+2024-12-28 19:29:13,408 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,409 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,410 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,411 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,411 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,412 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,413 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,414 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,415 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,417 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,417 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,419 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,420 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,421 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,421 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,422 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,424 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,425 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,427 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,427 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,428 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,429 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,429 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,430 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,431 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,432 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,433 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,433 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,434 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,434 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,435 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,435 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,436 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,436 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,436 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,437 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,438 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,438 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,439 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,439 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,440 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,440 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,441 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,441 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,441 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,441 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,442 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,442 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,442 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,443 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,445 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,445 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,446 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,447 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,447 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,448 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,448 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,449 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,450 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,450 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,451 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,451 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,451 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,452 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,452 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,453 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,453 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,455 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,456 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,457 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,457 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,457 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,458 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,458 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,459 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,460 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,460 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,461 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,462 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,463 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,465 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,478 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,479 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,480 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,481 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,484 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,485 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,487 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,495 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:13,496 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:14,131 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:14,131 - CRITICAL - Errore critico: 
+2024-12-28 19:29:15,631 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,631 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,631 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,633 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,633 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,633 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,634 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,634 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,635 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,635 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,638 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,639 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,640 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,640 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,641 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,641 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,642 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,642 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,642 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,642 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,643 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,643 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,644 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,644 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,645 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,645 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,646 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,646 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,648 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,649 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,649 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,650 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,650 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,651 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,651 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,652 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,652 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,652 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,653 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,653 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,654 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,654 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,655 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,656 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,656 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,656 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,657 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,657 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,658 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,658 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,658 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,659 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,659 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,660 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,660 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,661 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,661 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,662 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,662 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,662 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,663 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,663 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,663 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,664 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,664 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,665 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,665 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,667 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,668 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,669 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,669 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,670 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,671 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,671 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,672 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,672 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,674 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,674 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,675 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,676 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,677 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,678 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,678 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,678 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,679 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,680 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,680 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,680 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,681 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:15,681 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:16,259 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:16,260 - CRITICAL - Errore critico: 
+2024-12-28 19:29:17,837 - INFO - Follower 531758406 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,839 - INFO - Follower 60850232106 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,841 - INFO - Follower 55968501995 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,841 - INFO - Follower 60628346710 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,842 - INFO - Follower 65391034968 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,843 - INFO - Follower 55178050501 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,843 - INFO - Follower 64379260940 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,843 - INFO - Follower 262856836 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,844 - INFO - Follower 54579428206 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,845 - INFO - Follower 56714285656 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,845 - INFO - Follower 34158564957 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,846 - INFO - Follower 50656527917 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,846 - INFO - Follower 62233317658 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,847 - INFO - Follower 1795971330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,847 - INFO - Follower 3098195771 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,848 - INFO - Follower 33498315874 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,848 - INFO - Follower 51524079790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,848 - INFO - Follower 65242802457 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,849 - INFO - Follower 58086058382 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,849 - INFO - Follower 53982955686 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,850 - INFO - Follower 62619594223 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,850 - INFO - Follower 6267328541 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,850 - INFO - Follower 67115637172 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,851 - INFO - Follower 67038712330 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,851 - INFO - Follower 67281319268 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,851 - INFO - Follower 65360210258 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,852 - INFO - Follower 67592464790 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,852 - INFO - Follower 69002489097 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,853 - INFO - Follower 70690130037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,853 - INFO - Follower 49519786147 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,853 - INFO - Follower 4023341285 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,854 - INFO - Follower 6053618475 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,855 - INFO - Follower 69822893255 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,855 - INFO - Follower 63959794645 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,855 - INFO - Follower 8611865700 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,855 - INFO - Follower 635836312 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,856 - INFO - Follower 65767865400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,856 - INFO - Follower 32882873105 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,856 - INFO - Follower 4266037558 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,857 - INFO - Follower 70245543127 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,857 - INFO - Follower 60089084248 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,857 - INFO - Follower 64568406435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,858 - INFO - Follower 62496872860 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,858 - INFO - Follower 58904352841 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,859 - INFO - Follower 37591806435 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,860 - INFO - Follower 4478716867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,860 - INFO - Follower 7175027371 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,861 - INFO - Follower 18488129930 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,861 - INFO - Follower 58434001614 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,862 - INFO - Follower 11816871845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,862 - INFO - Follower 36797143511 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,863 - INFO - Follower 497112339 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,863 - INFO - Follower 318005933 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,864 - INFO - Follower 1944910755 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,865 - INFO - Follower 54324637400 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,865 - INFO - Follower 9231843386 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,865 - INFO - Follower 2036259304 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,866 - INFO - Follower 4742620867 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,866 - INFO - Follower 6164989895 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,866 - INFO - Follower 31569435269 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,867 - INFO - Follower 494862188 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,867 - INFO - Follower 1566341300 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,868 - INFO - Follower 586576035 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,869 - INFO - Follower 290077274 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,869 - INFO - Follower 3289958773 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,869 - INFO - Follower 202036779 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,870 - INFO - Follower 6206537530 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,871 - INFO - Follower 241619877 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,872 - INFO - Follower 8478194452 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,874 - INFO - Follower 38594327 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,876 - INFO - Follower 4054448007 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,878 - INFO - Follower 8754667816 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,882 - INFO - Follower 16950816919 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,884 - INFO - Follower 308534271 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,885 - INFO - Follower 4505793037 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,886 - INFO - Follower 38202437 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,889 - INFO - Follower 8947694960 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,892 - INFO - Follower 553016573 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,895 - INFO - Follower 2280680381 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,899 - INFO - Follower 48676890 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,901 - INFO - Follower 7124161885 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,903 - INFO - Follower 370642029 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,903 - INFO - Follower 146235483 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,912 - INFO - Follower 3020058788 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,916 - INFO - Follower 51513996845 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,917 - INFO - Follower 492105513 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,918 - INFO - Follower 1952492130 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,920 - INFO - Follower 61975126348 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,926 - INFO - Follower 67575164469 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:17,927 - INFO - Follower 70107501522 ha già il campo 'followers'. Salto il recupero.
+2024-12-28 19:29:18,558 - ERROR - Errore durante il recupero dei follower per follower_id 69002489097: Expecting value: line 1 column 1 (char 0)
+2024-12-28 19:29:18,558 - CRITICAL - Errore critico: 
+2024-12-28 19:29:35,622 - CRITICAL - Errore critico: 

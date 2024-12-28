@@ -2,7 +2,7 @@ import networkx as nx
 import random
 import json 
 class GraphConstructor:
-    def __init__(self, followers_path = r"../../../data/final_dataset.json"):
+    def __init__(self, followers_path = r"graph/dataset.json"):
         with open(followers_path , "rb") as f:
             self.user_data = json.load(f)
         self.graph = nx.DiGraph()

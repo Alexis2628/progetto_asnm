@@ -21,8 +21,9 @@ def main():
     graph_builder = GraphConstructor()
     graph_builder.build_graph()
     graph = graph_builder.graph
-
-    # Estrazione e pre-elaborazione dei testi
+    
+    
+    Estrazione e pre-elaborazione dei testi
     preprocessor = TextPreprocessor()
     user_opinions = preprocessor.extract_user_opinions(graph)
 
@@ -41,9 +42,9 @@ def main():
     sentiment_visualizer = SentimentVisualizer()
     
     # Visualizza la distribuzione del sentiment
-    analyzer.visualize_sentiment_distribution(sentiment_scores, cluster_labels)
+    sentiment_visualizer.visualize_sentiment_distribution(sentiment_scores, cluster_labels)
     
-    analyzer.visualize_sentiment_vs_themes_heatmap(sentiment_scores, user_opinions, cluster_labels)
+    sentiment_visualizer.visualize_sentiment_vs_themes_heatmap(sentiment_scores, user_opinions, cluster_labels)
     # Identificazione e visualizzazione temi polarizzanti
     polarizing_words = clustering.identify_polarizing_themes(user_opinions, cluster_labels)
     wordcloud_visualizer = WordCloudVisualizer()

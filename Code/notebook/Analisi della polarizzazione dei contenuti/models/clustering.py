@@ -8,7 +8,7 @@ class Clustering:
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.model = BertModel.from_pretrained('bert-base-uncased')
 
-    def embed_texts(self, texts, batch_size=32):
+    def embed_texts(self, texts, batch_size=8):
         embeddings = []
         for i in range(0, len(texts), batch_size):
             batch_texts = texts[i:i + batch_size]
