@@ -8,7 +8,6 @@ def setup_logging():
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler("followers_analysis.log"),
             logging.StreamHandler()
         ]
     )
