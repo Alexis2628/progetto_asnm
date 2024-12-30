@@ -3,7 +3,14 @@ from utils.GraphConstructor import GraphConstructor
 from models.models import Models
 from optimizers.optimizer import Optimizer
 import os
+import logging
 import json  # Aggiungi questa importazione
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler()],
+)
+
 
 def convert_sets_in_dict(d):
     """
@@ -21,9 +28,11 @@ if __name__ == "__main__":
     
 
     # Graph construction
-    graph_builder = GraphConstructor()
+    graph_builder = GraphConstructor(followers_path="dataset/dataset_cleaned.json")
     graph_builder.build_graph()
     graph = graph_builder.graph
+    logging.info(f"Numero di nodi del grafo : {len(graph.nodes)}")
+    logging.info(f"Numero di archi del grafo : {len(graph.edges)}")
     
     # Centrality calculation (for seed nodes)
     centralities = graph_builder.calculate_centralities()

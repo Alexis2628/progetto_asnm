@@ -2,8 +2,8 @@ import networkx as nx
 import random
 import json 
 class GraphConstructor:
-    def __init__(self, followers_path = "../../../dataset/dataset_cleaned.json"):
-        with open(followers_path , "rb") as f:
+    def __init__(self, followers_path="../../../dataset/dataset_cleaned.json"):
+        with open(followers_path, "rb") as f:
             self.user_data = json.load(f)
         self.graph = nx.DiGraph()
 
@@ -11,24 +11,31 @@ class GraphConstructor:
         for user_id, user_info in self.user_data.items():
             user_id = int(user_id)
 
-            # Aggiungi il nodo per l'utente
-            if not self.graph.has_node(user_id):
-                self.graph.add_node(user_id, username=user_info.get("username", ""), user_data=user_info.get("user_data", []))
+            # Aggiungi il nodo per l'utente principale
+           
+            self.graph.add_node(user_id, username=user_info.get("username", ""), user_data=user_info.get("user_data", []))
 
-            # Aggiungi i follower come nodi e crea archi
+            # Aggiungi i follower diretti
             for follower in user_info.get("followers", []):
                 follower_id = int(follower["user_id"])
-                follower_follower = follower.get("followers", [])
-                if not self.graph.has_node(follower_id):
-                    self.graph.add_node(follower_id, username=follower.get("username", ""), user_data=follower.get("user_data", []))
-                for follw in follower_follower:
-                    follower_id2 = int(follw["user_id"])
-                    self.graph.add_edge(follower_id, follower_id2)
+
+                
+                self.graph.add_node(follower_id, username=follower.get("username", ""), user_data=follower.get("user_data", []))
+
+                # Aggiungi l'arco tra il follower e il nodo principale
                 self.graph.add_edge(follower_id, user_id)
+
+                # Aggiungi i follower del follower (al livello successivo, cioè fino ai follower dei follower)
+                for follower_of_follower in follower.get("followers", []):
+                    follower_of_follower_id = int(follower_of_follower["user_id"])
+                    
+                    # Aggiungi l'arco dal follower del follower al follower
+                    self.graph.add_edge(follower_of_follower_id, follower_id)
 
         # Aggiungi soglie casuali per ogni nodo
         for node in self.graph.nodes():
             self.graph.nodes[node]["threshold"] = random.uniform(0, 1)
+
 
     def trust_function(self,neighbor, node):
         """
