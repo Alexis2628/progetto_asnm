@@ -2,7 +2,7 @@ import networkx as nx
 import random
 import json 
 class GraphConstructor:
-    def __init__(self, followers_path = "../../data/final_dataset.json"):
+    def __init__(self, followers_path = "../../../dataset/dataset_cleaned.json"):
         with open(followers_path , "rb") as f:
             self.user_data = json.load(f)
         self.graph = nx.DiGraph()
@@ -18,10 +18,12 @@ class GraphConstructor:
             # Aggiungi i follower come nodi e crea archi
             for follower in user_info.get("followers", []):
                 follower_id = int(follower["user_id"])
-
+                follower_follower = follower.get("followers", [])
                 if not self.graph.has_node(follower_id):
                     self.graph.add_node(follower_id, username=follower.get("username", ""), user_data=follower.get("user_data", []))
-
+                for follw in follower_follower:
+                    follower_id2 = int(follw["user_id"])
+                    self.graph.add_edge(follower_id, follower_id2)
                 self.graph.add_edge(follower_id, user_id)
 
         # Aggiungi soglie casuali per ogni nodo

@@ -56,7 +56,7 @@ def find_followers_of_followers(original_json_path, output_json_path):
 
     request_count = 0
     max_requests = 30
-
+    user_done = 0
     # Itera sui follower di ogni utente e trova i loro follower
     for user_id, user_info in original_data.items(): 
         if request_count >= max_requests:
@@ -68,6 +68,7 @@ def find_followers_of_followers(original_json_path, output_json_path):
             follower_id = follower.get("user_id")
             if "followers" in follower:
                 logging.info(f"Follower {follower_id} ha già il campo 'followers'. Salto il recupero.")
+                user_done = user_done + 1
                 continue 
             # Solo se il follower è già presente nei nodi esistenti
             if "a"=="a":
@@ -81,6 +82,7 @@ def find_followers_of_followers(original_json_path, output_json_path):
                     out = ti.retrieve_follower_by_id(follower_id)
                     request_count += 1
                 except Exception as e:
+                    logging.info(f"utenti analizzati = {user_done}")
                     logging.error("Errore durante il recupero dei follower per follower_id %s: %s", follower_id, e)
                     raise Exception
                 follower_followers = process_json_data(out)
@@ -91,6 +93,7 @@ def find_followers_of_followers(original_json_path, output_json_path):
                 ]
                 leng = len(follower["followers"])
                 logging.info(f"Recupero follower per follower_id: {follower_id} con n°{leng}")
+    logging.info(f"utenti analizzati = {user_done+30}")
     # Salva il nuovo JSON con i follower dei follower
     with open(output_json_path, 'w') as output_file:
         json.dump(original_data, output_file, indent=4)
@@ -102,8 +105,8 @@ if __name__ == "__main__":
     for i in range(1, 40):
         try:
             find_followers_of_followers(
-                r'notebook//Analisi della polarizzazione dei contenuti//graph//updated.json',
-                r'notebook//Analisi della polarizzazione dei contenuti//graph//updated.json'
+                r'dataset\dataset_cleaned.json',
+                r'dataset\dataset_cleaned.json'
             )
         except Exception as e:
             logging.critical("Errore critico: %s", e)

@@ -279,6 +279,59 @@ class ThreadsInterface(BaseThreadsInterface):
         response = session.post("https://www.threads.net/graphql/query", data=data)
         
         return response.json()
+    
+    def retrieve_follower_by_id2(self, user_id: str) -> dict:
+        import requests
+        import json
+
+        session = requests.Session()
+        session.headers.update({
+            "authority": "www.threads.net",
+            "method": "POST",
+            "path": "/graphql/query",
+            "scheme": "https",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate, br",
+            "accept-language": "it,it-IT;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+            "origin": "https://www.threads.net",
+            "priority": "u=1, i",
+            "referer": "https://www.threads.net/",
+            "x-ig-app-id": "238260118697367",
+            "Content-Type": "application/x-www-form-urlencoded"
+        })
+        cookies = {
+            "sessionid": "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
+        }
+        session.cookies.update(cookies)
+
+        data = {
+            'lsd': self.api_token,
+            "fb_api_req_friendly_name": "BarcelonaFriendshipsFollowersTabQuery",
+            "fb_api_caller_class": "RelayModern",
+            "__comet_req": 29,
+            'variables': json.dumps({
+                "first": 20,
+                "userID": user_id,
+                "__relay_internal__pv__BarcelonaIsLoggedInrelayprovider": True,
+                "__relay_internal__pv__BarcelonaIsCrawlerrelayprovider": False,
+                "__relay_internal__pv__BarcelonaShouldShowFediverseListsrelayprovider": False,
+                "__relay_internal__pv__BarcelonaIsInlineReelsEnabledrelayprovider": False
+            }),
+            'doc_id': "8556216414475236",
+        }
+
+        try:
+            response = session.post("https://www.threads.net/graphql/query", data=data)
+            response.raise_for_status()  # Verifica se la risposta ha avuto successo (status code 2xx)
+            
+            # Tenta di analizzare il JSON
+            return response.content
+        except requests.exceptions.RequestException as e:
+            # Gestisce errori legati alla richiesta HTTP
+            raise RuntimeError(f"HTTP request failed: {e}")
+        except json.JSONDecodeError as e:
+            # Gestisce errori legati alla decodifica del JSON
+            raise RuntimeError(f"Response is not valid JSON: {e}")
 
     
     def retrieve_replies_by_post_id(self, post_id: str) -> dict:

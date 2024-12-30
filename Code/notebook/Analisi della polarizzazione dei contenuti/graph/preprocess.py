@@ -3,7 +3,6 @@ import json
 # Parametri configurabili
 MIN_FOLLOWERS = 10  # Numero minimo di follower per conservare un utente
 MAX_NODES = 5000  # Numero massimo di nodi nel dataset ridotto
-MAX_FOLLOWERS_PER_USER = 5000  # Numero massimo di follower per utente
 
 # Carica il file JSON
 with open('final_dataset.json', 'rb') as file:
@@ -47,9 +46,6 @@ for user_id, user_info in data.items():
             if has_text(follower['user_data_translated']):
                 filtered_followers.append(follower)
         
-        # Limita il numero massimo di follower per utente
-        filtered_followers = filtered_followers[:MAX_FOLLOWERS_PER_USER]
-
         # Aggiungi l'utente al dataset ridotto
         reduced_data[user_id] = {
             "username": user_info.get("username", ""),
