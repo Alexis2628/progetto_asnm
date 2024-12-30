@@ -21,3 +21,25 @@ class SentimentAnalyzer:
             result = self.pipeline(text[:512])[0]
             results[user_id] = result['label']
         return results
+    
+
+    def extract_sentiments_from_graph(self,graph):
+        """
+        Estrai i dati di sentiment dai nodi del grafo.
+        :param graph: Il grafo costruito con i dati degli utenti.
+        :return: Un dizionario con il sentiment score per ogni utente.
+        """
+        sentiment_scores = {}
+        for node, data in graph.nodes(data=True):
+            user_data = data.get("user_data", [])
+            if user_data:
+                # Calcola il sentiment medio per ogni utente in base ai loro post
+                average_sentiment = sum(
+                post["Sentiment"]["score"] if post["Sentiment"]["sentiment"] == "positive" 
+                else (1 - post["Sentiment"]["score"] if post["Sentiment"]["sentiment"] == "negative" else 0.5) 
+                for post in user_data) / len(user_data)
+
+                sentiment_scores[node] = average_sentiment
+            # else:
+            #     sentiment_scores[node] = 0  # Nessun dato, valore di default
+        return sentiment_scores

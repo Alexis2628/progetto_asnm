@@ -20,13 +20,11 @@ class TextPreprocessor:
 
     def preprocess_text(self, text):
         text = unicodedata.normalize('NFKD', text).lower()
-        #text = re.sub(r'[^\w\s]', '', text)
-        #words = word_tokenize(text)
-        # Keep words not in stop words
-        #words = [word for word in words if word not in self.stop_words]
-        # Optional: Disable stemming to preserve original word forms
-        # words = [self.stemmer.stem(word) for word in words]
-        return text #" ".join(words)
+        text = re.sub(r'[^\w\s]', '', text)
+        words = word_tokenize(text)
+        words = [word for word in words if word not in self.stop_words]
+        words = [self.stemmer.stem(word) for word in words]
+        return " ".join(words)
 
     def extract_user_opinions(self, graph): 
         user_opinions = {} 
