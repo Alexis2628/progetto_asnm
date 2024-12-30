@@ -10,4 +10,5 @@ class TopicModeling:
         dictionary = Dictionary(texts)
         corpus = [dictionary.doc2bow(text) for text in texts]
         lda_model = LdaModel(corpus=corpus, num_topics=num_topics, id2word=dictionary, random_state=42)
+        logging.info("Topic modeling completato.")
         return lda_model, dictionary, corpus

@@ -17,6 +17,7 @@ logging.basicConfig(
 )
 
 def main():
+    logging.info("Inizio del processo principale.")
     output_dir = r"Code//notebook//Analisi della polarizzazione dei contenuti//output"
     # Costruzione del grafo
     graph_builder = GraphConstructor(followers_path="dataset/dataset_cleaned.json")
@@ -61,6 +62,7 @@ def main():
     lda_visualizer = LDAViz()
     lda_visualizer.visualize(lda_model, corpus, dictionary, output_dir=output_dir)
 
+    logging.info("Processo principale completato.")
 
 if __name__ == "__main__":
     main()

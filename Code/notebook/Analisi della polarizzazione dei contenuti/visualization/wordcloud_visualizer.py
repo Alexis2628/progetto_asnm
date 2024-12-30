@@ -13,3 +13,4 @@ class WordCloudVisualizer:
         plt.axis("off")
         plt.savefig(f"{output_dir}/polarizing_themes.png")
         plt.close()
+        logging.info("Word cloud creata e salvata.")

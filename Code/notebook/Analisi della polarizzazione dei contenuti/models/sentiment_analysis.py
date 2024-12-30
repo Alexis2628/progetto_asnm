@@ -1,6 +1,7 @@
 from textblob import TextBlob
 from transformers import pipeline
 import torch
+import logging
 
 class SentimentAnalyzer:
     def __init__(self, method="textblob"):
@@ -10,6 +11,7 @@ class SentimentAnalyzer:
             self.pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english", device=self.device)
 
     def analyze(self, user_opinions):
+        logging.info(f"Analisi del sentiment utilizzando il metodo {self.method}.")
         if self.method == "textblob":
             return {user_id: TextBlob(text).sentiment.polarity for user_id, text in user_opinions.items()}
         elif self.method == "huggingface":
@@ -21,14 +23,9 @@ class SentimentAnalyzer:
             result = self.pipeline(text[:512])[0]
             results[user_id] = result['label']
         return results
-    
 
-    def extract_sentiments_from_graph(self,graph):
-        """
-        Estrai i dati di sentiment dai nodi del grafo.
-        :param graph: Il grafo costruito con i dati degli utenti.
-        :return: Un dizionario con il sentiment score per ogni utente.
-        """
+    def extract_sentiments_from_graph(self, graph):
+        logging.info("Estrazione dei dati di sentiment dai nodi del grafo.")
         sentiment_scores = {}
         for node, data in graph.nodes(data=True):
             user_data = data.get("user_data", [])
@@ -40,6 +37,5 @@ class SentimentAnalyzer:
                 for post in user_data) / len(user_data)
 
                 sentiment_scores[node] = average_sentiment
-            # else:
-            #     sentiment_scores[node] = 0  # Nessun dato, valore di default
+        logging.info("Estrazione dei dati di sentiment completata.")
         return sentiment_scores

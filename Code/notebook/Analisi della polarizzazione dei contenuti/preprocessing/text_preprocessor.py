@@ -27,6 +27,7 @@ class TextPreprocessor:
         return " ".join(words)
 
     def extract_user_opinions(self, graph): 
+        logging.info("Estrazione delle opinioni degli utenti dal grafo.")
         user_opinions = {} 
         for node, data in graph.nodes(data=True): 
             threads = data.get("user_data", []) 
@@ -37,4 +38,5 @@ class TextPreprocessor:
             if not preprocessed_text.strip():  # Handle empty processed text
                 preprocessed_text = "empty_content"
             user_opinions[node] = preprocessed_text
+        logging.info("Estrazione delle opinioni degli utenti completata.")
         return user_opinions

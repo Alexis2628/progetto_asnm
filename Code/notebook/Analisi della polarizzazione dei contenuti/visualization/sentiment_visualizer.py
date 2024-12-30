@@ -47,6 +47,7 @@ class SentimentVisualizer:
         plt.savefig(f"{self.output_dir}/sentiment_bar_plot.png")
         plt.close()
         gc.collect()  # Rilascia la memoria
+        logging.info("Visualizzazione della distribuzione del sentiment completata.")
 
     def visualize_sentiment_vs_themes_heatmap(self, sentiment_scores, user_opinions, cluster_labels):
         logging.info("Creazione della heatmap tra sentiment e temi polarizzanti.")
@@ -75,3 +76,4 @@ class SentimentVisualizer:
         plt.savefig(f"{self.output_dir}/sentiment_themes_heatmap.png")
         plt.close()
         gc.collect()  # Rilascia la memoria
+        logging.info("Heatmap sentiment vs temi polarizzanti creata e salvata.")
