@@ -28,7 +28,7 @@ class ThreadsInterface(BaseThreadsInterface):
         self.default_headers = {
             'Authority': 'www.threads.net',
             'Accept': '*/*',
-            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7',
             'Cache-Control': 'no-cache',
             'Content-Type': 'application/x-www-form-urlencoded',
             'Origin': 'https://www.threads.net',
@@ -255,7 +255,8 @@ class ThreadsInterface(BaseThreadsInterface):
             "Content-Type": "application/x-www-form-urlencoded"
         })
         cookies = {
-            "sessionid": "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
+            # "sessionid": "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
+            "sessionid": "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA"
         }
         session.cookies.update(cookies)
 
@@ -265,14 +266,15 @@ class ThreadsInterface(BaseThreadsInterface):
                 "fb_api_caller_class": "RelayModern",
                 "__comet_req": 29,
                 'variables':json.dumps({
-                    "first": 20,
+                    "first": 100,
                     "userID": user_id,
                     "__relay_internal__pv__BarcelonaIsLoggedInrelayprovider": True,
                     "__relay_internal__pv__BarcelonaIsCrawlerrelayprovider": False,
-                    "__relay_internal__pv__BarcelonaShouldShowFediverseListsrelayprovider": False,
-                    "__relay_internal__pv__BarcelonaIsInlineReelsEnabledrelayprovider" : False
+                    "__relay_internal__pv__BarcelonaHasDisplayNamesrelayprovider":False,
+                    "__relay_internal__pv__BarcelonaShouldShowFediverseListsrelayprovider": True
+                    #"__relay_internal__pv__BarcelonaIsInlineReelsEnabledrelayprovider" : False
                 }),
-                'doc_id': "8556216414475236",#'26277468955231937',
+                'doc_id': "9390748034302491" #"8556216414475236",#'26277468955231937',
             }
 
 

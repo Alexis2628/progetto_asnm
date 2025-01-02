@@ -46,8 +46,16 @@ def find_followers_of_followers(original_json_path, output_json_path):
     Trova i follower dei follower solo se sono già presenti nel dataset originale.
     """
     # Carica il JSON originale
-    with open(original_json_path, 'r') as file:
+    with open(original_json_path, 'rb') as file:
         original_data = json.load(file)
+
+    alldata = len(original_data)
+    for user_id, user_info in original_data.items():
+        if "followers" in user_info:
+            alldata = alldata + len(user_info["followers"])
+
+            
+    logging.info(f"Total number of user and follower : {alldata}")
 
     # Prepara un insieme di user_id per un rapido controllo
     existing_user_ids = allusers(original_data)
@@ -67,7 +75,7 @@ def find_followers_of_followers(original_json_path, output_json_path):
         for follower in followers:
             follower_id = follower.get("user_id")
             if "followers" in follower:
-                logging.info(f"Follower {follower_id} ha già il campo 'followers'. Salto il recupero.")
+                # logging.info(f"Follower {follower_id} ha già il campo 'followers'. Salto il recupero.")
                 user_done = user_done + 1
                 continue 
             # Solo se il follower è già presente nei nodi esistenti
@@ -80,6 +88,9 @@ def find_followers_of_followers(original_json_path, output_json_path):
                 # Recupera i follower del follower
                 try:
                     out = ti.retrieve_follower_by_id(follower_id)
+                    if "error" in out:
+                        logging.error("Errore durante il recupero dei follower per follower_id %s", follower_id)
+                        raise Exception
                     request_count += 1
                 except Exception as e:
                     logging.info(f"utenti analizzati = {user_done}")

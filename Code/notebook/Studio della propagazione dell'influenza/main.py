@@ -2,6 +2,7 @@ import json  # Aggiungi questa importazione
 from utils.GraphConstructor import GraphConstructor
 from models.models import Models
 from optimizers.optimizer import Optimizer
+import networkx as nx
 import os
 import logging
 import json  # Aggiungi questa importazione
@@ -33,6 +34,11 @@ if __name__ == "__main__":
     graph = graph_builder.graph
     logging.info(f"Numero di nodi del grafo : {len(graph.nodes)}")
     logging.info(f"Numero di archi del grafo : {len(graph.edges)}")
+
+
+    # Esporta in formato .gexf
+    nx.write_gexf(graph, "grafo.gexf")
+
     
     # Centrality calculation (for seed nodes)
     centralities = graph_builder.calculate_centralities()
