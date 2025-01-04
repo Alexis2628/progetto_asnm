@@ -15,8 +15,9 @@ def celf(graph, k, p=0.1):
             if node not in current_seeds:
                 if node not in influence_cache:
                     # Calcola l'influenza solo se non è già presente nella cache
+                    result = independent_cascade_model(graph, current_seeds | {node}, p)
                     influence_cache[node] = len(
-                        independent_cascade_model(graph, current_seeds | {node}, p)
+                        result[list(result.keys())[-1]]
                     )
                 
                 # Ottieni l'influenza del nodo

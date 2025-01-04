@@ -10,7 +10,8 @@ def singles(graph, k, p=0.1):
     # Calcolare l'influenza di ogni nodo
     for node in graph.nodes():
         if node not in influence_cache:
-            influence_cache[node] = len(independent_cascade_model(graph, {node}, p))
+            result = independent_cascade_model(graph, {node}, p)
+            influence_cache[node] = len(result[list(result.keys())[-1]])
     
     # Ordinare i nodi in base alla loro influenza (decrescente) e restituire i primi k
     return set(

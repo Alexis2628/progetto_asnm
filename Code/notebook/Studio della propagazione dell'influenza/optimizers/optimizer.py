@@ -94,4 +94,13 @@ class Optimizer:
         results['EaSyIM'] = self.run_easyim(k, p)
         results['Sketching'] = self.run_sketching(k, p)
         results['Singles'] = self.run_singles(k, p)
+
+        self.print_results(results)
         return results
+
+
+    def print_results(self,optimization_results):
+        # Stampa dei risultati degli algoritmi di ottimizzazione
+        print("\nRisultati degli algoritmi di ottimizzazione:")
+        for algo_name, result in optimization_results.items():
+            print(f"{algo_name}: {result}")

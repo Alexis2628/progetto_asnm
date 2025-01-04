@@ -55,6 +55,6 @@ def simulate_si(graph, beta, steps, initial_infected=None):
             break  # Interrompi se non ci sono nuove infezioni
 
         states = new_states
-        evolution[step] = new_infected.copy()
+        evolution[step] = {node for node, state in states.items() if state == "I"}
 
     return evolution

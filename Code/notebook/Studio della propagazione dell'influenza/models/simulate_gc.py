@@ -28,9 +28,9 @@ def simulate_gc(graph, prob, steps, seed=None, edge_probabilities=None):
     Ritorna:
         - Una lista contenente l'insieme dei nodi attivati a ogni passo.
     """
-    activated = set()
+   
     seed = seed if seed is not None else random.choice(list(graph.nodes))
-    activated.add(seed)
+    activated = set(seed)
 
     evolution = {}  # Traccia l'evoluzione dell'attivazione
 

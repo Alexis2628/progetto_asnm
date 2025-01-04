@@ -1,5 +1,5 @@
 # """
-# Simulazione con Threshold Reversibile)
+# Simulazione con Threshold Reversibile
 # Teoria: Nel modello Threshold Reversibile, i nodi hanno una soglia di attivazione che può essere influenzata da dinamiche reversibili. Una volta che un nodo diventa attivo, esso può tornare allo stato non attivo se una condizione reversibile è soddisfatta. Questo è simile a un modello SIS, ma con soglie specifiche per l'attivazione e la disattivazione.
 # 1.	Dinamica: Un nodo attivo può diventare di nuovo non attivo se l'influenza ricevuta dai suoi vicini scende al di sotto della sua soglia.
 # 2.	Reversibilità: I nodi non sono permanentemente attivi, ma possono passare avanti e indietro tra gli stati.
@@ -11,7 +11,7 @@
 # Implementazione: Nel codice, simulate_tr implementa la dinamica reversibile, permettendo ai nodi di attivarsi o disattivarsi in base alla soglia e all'influenza ricevuta.
 # """
 import random
-def simulate_tr(graph, steps):
+def simulate_tr(graph, steps, initial_active = None):
     """
     Simula la diffusione con il modello Threshold Reversibile.
 
@@ -25,7 +25,8 @@ def simulate_tr(graph, steps):
     """
     # Stato iniziale: tutti i nodi sono inattivi
     states = {node: False for node in graph.nodes}  # False = inattivo, True = attivo
-
+    for node in initial_active:
+        states[node] = True
     # Tracciamento della dinamica
     dynamics = {}
 
@@ -35,7 +36,9 @@ def simulate_tr(graph, steps):
         for node in graph.nodes:
             # Calcola la somma delle influenze dai vicini attivi
             active_neighbors = sum(1 for neighbor in graph.neighbors(node) if states[neighbor])
-            influence = active_neighbors / max(1, graph.degree[node])  # Normalizza per il grado
+            influence = active_neighbors / max(1, len(list(graph.neighbors(node))))  # Usa i vicini
+            # influence = active_neighbors / max(1, graph.degree[node])  # Normalizza per il grado
+
 
             # Regole di attivazione e disattivazione
             if not states[node] and influence >= graph.nodes[node]["threshold"]:

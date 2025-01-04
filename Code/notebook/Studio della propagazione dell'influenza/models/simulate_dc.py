@@ -29,9 +29,8 @@ def simulate_dc(graph, initial_prob, decay_factor, steps, seed=None, prob_cutoff
     Ritorna:
         - Un dizionario contenente l'insieme dei nodi attivati a ogni passo, con lo step come chiave.
     """
-    activated = set()
     seed = seed if seed is not None else random.choice(list(graph.nodes))
-    activated.add(seed)
+    activated = set(seed)
 
     prob = initial_prob
     evolution = {}  # Traccia l'evoluzione dell'attivazione

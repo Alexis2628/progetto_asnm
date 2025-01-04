@@ -12,7 +12,6 @@
 # Implementazione: La funzione friend_foe_dynamic_linear_threshold implementa una rete di influenze in cui gli amici rinforzano l'influenza e i nemici la indeboliscono, determinando l'attivazione in base alla soglia lineare.
 # """
 
-
 import random
 
 def friend_foe_dynamic_linear_threshold(graph, seed_nodes, trust_function):
@@ -21,9 +20,11 @@ def friend_foe_dynamic_linear_threshold(graph, seed_nodes, trust_function):
     :param graph: Grafo con nodi e archi.
     :param seed_nodes: Nodi iniziali (seminal nodes) da cui parte la diffusione.
     :param trust_function: Funzione che calcola la fiducia tra due nodi.
-    :return: Nodi che sono stati attivati alla fine del processo.
+    :return: Dizionario con i nodi attivati a ogni passo temporale.
     """
     activated = set(seed_nodes)  # I nodi iniziali che sono attivi.
+    propagation_steps = {0: set(seed_nodes)}  # Per salvare i nodi attivati in ogni passo
+    step = 0
 
     while True:
         new_activations = set()
@@ -52,7 +53,8 @@ def friend_foe_dynamic_linear_threshold(graph, seed_nodes, trust_function):
         if not new_activations:
             break
 
-        # Aggiungi i nuovi nodi attivati
+        step += 1
         activated.update(new_activations)
+        propagation_steps[step] = activated.copy()  # Salva i nuovi attivati
 
-    return activated
+    return propagation_steps

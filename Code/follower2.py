@@ -41,7 +41,7 @@ def allusers(original_data):
 
     return all_users
 
-def find_followers_of_followers(original_json_path, output_json_path):
+def find_followers_of_followers(original_json_path, output_json_path,session):
     """
     Trova i follower dei follower solo se sono già presenti nel dataset originale.
     """
@@ -87,13 +87,15 @@ def find_followers_of_followers(original_json_path, output_json_path):
 
                 # Recupera i follower del follower
                 try:
-                    out = ti.retrieve_follower_by_id(follower_id)
+                    out = ti.retrieve_follower_by_id(follower_id,session)
                     if "error" in out:
                         logging.error("Errore durante il recupero dei follower per follower_id %s", follower_id)
                         raise Exception
                     request_count += 1
                 except Exception as e:
                     logging.info(f"utenti analizzati = {user_done}")
+                    with open(output_json_path+"err.json", 'w') as output_file:
+                        json.dump(original_data, output_file, indent=4)
                     logging.error("Errore durante il recupero dei follower per follower_id %s: %s", follower_id, e)
                     raise Exception
                 follower_followers = process_json_data(out)
@@ -113,12 +115,20 @@ def find_followers_of_followers(original_json_path, output_json_path):
 
 if __name__ == "__main__":
     setup_logging()
-    for i in range(1, 40):
-        try:
-            find_followers_of_followers(
-                r'dataset\dataset_cleaned.json',
-                r'dataset\dataset_cleaned.json'
-            )
-        except Exception as e:
-            logging.critical("Errore critico: %s", e)
-            break
+    sessions= [
+            "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
+            "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA",
+            "1653774166%3A9uDdOCkxtjfjYr%3A25%3AAYf2jGK4vIx5W_dkE5m8a7PpoN4LA2D5CxUpR4C7BA"#, # cat
+            # "65955050144%3AkwLtyptmN1PWpx%3A3%3AAYfBeEJmc5PyFaNnzsG5Rr-3WVdWmufDi9nBvF94eg" # Fradsa Pasquasdsa
+    ]
+    for session in sessions:
+        for i in range(1, 2):
+            try:
+                find_followers_of_followers(
+                    r'dataset\dataset_cleaned.json',
+                    r'dataset\dataset_cleaned.json',
+                    session
+                )
+            except Exception as e:
+                logging.critical("Errore critico: %s", e)
+                break

@@ -11,7 +11,8 @@ def greedy(graph, k, p=0.1):
                 # Aggiungi temporaneamente il nodo al set dei seed
                 temp_seeds = current_seeds | {node}
                 # Calcola l'influenza ottenuta con il nuovo seed
-                influence = len(independent_cascade_model(graph, temp_seeds, p))
+                result = independent_cascade_model(graph, temp_seeds, p)
+                influence = len(result[list(result.keys())[-1]])
                 # Se l'influenza è maggiore di quella precedentemente registrata, aggiorna
                 if influence > best_influence:
                     best_influence = influence

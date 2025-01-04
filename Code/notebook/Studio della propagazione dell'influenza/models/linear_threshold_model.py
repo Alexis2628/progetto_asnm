@@ -20,33 +20,35 @@
 
 import random
 def linear_threshold_model(graph, seed_nodes):
-    # Inizializzazione dei nodi attivi
     activated = set(seed_nodes)
     newly_activated = set(seed_nodes)
     
-    # Assegna l'influenza agli archi (da un nodo i ai suoi vicini diretti j)
+    # Assegna l'influenza agli archi
     for node in graph.nodes():
-        neighbors = list(graph.successors(node))  # Usare successors per i vicini diretti
+        neighbors = list(graph.successors(node))
         if neighbors:
             weight = 1 / len(neighbors)
             for neighbor in neighbors:
                 graph.edges[node, neighbor]["influence"] = weight
 
-    # Propagazione dell'attivazione
+    propagation_steps = {0: set(seed_nodes)}  # Salva i risultati per step
+    step = 0
+
     while newly_activated:
         next_activated = set()
         for node in graph.nodes():
             if node not in activated:
                 total_influence = sum(
                     graph.edges[neighbor, node]["influence"]
-                    for neighbor in graph.predecessors(node)  # Influenza dai predecessori
+                    for neighbor in graph.predecessors(node)
                     if neighbor in activated
                 )
                 if total_influence >= graph.nodes[node]["threshold"]:
                     next_activated.add(node)
 
         newly_activated = next_activated
+        step += 1
         activated.update(newly_activated)
+        propagation_steps[step] = activated.copy()
 
-    return activated
-
+    return propagation_steps

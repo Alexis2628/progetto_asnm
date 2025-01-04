@@ -29,9 +29,8 @@ def simulate_gt(graph, steps, seed=None):
     
    
     # Inizializza l'insieme dei nodi attivati
-    activated = set()
     seed = seed if seed is not None else random.choice(list(graph.nodes))
-    activated.add(seed)
+    activated = set(seed)
 
     evolution = {}  # Traccia l'evoluzione dell'attivazione
     evolution[0] = activated.copy()

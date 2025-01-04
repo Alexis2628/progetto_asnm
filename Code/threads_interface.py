@@ -237,7 +237,7 @@ class ThreadsInterface(BaseThreadsInterface):
         )
         return response.json()
     
-    def retrieve_follower_by_id(self,  user_id: str) -> dict:
+    def retrieve_follower_by_id(self,  user_id: str, session_id :str) -> dict:
 
         session = requests.Session()
         session.headers.update({
@@ -255,8 +255,10 @@ class ThreadsInterface(BaseThreadsInterface):
             "Content-Type": "application/x-www-form-urlencoded"
         })
         cookies = {
+            "sessionid":  session_id
             # "sessionid": "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
-            "sessionid": "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA"
+            # "sessionid": "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA"
+            # "sessionid":"1653774166%3A9uDdOCkxtjfjYr%3A25%3AAYf2jGK4vIx5W_dkE5m8a7PpoN4LA2D5CxUpR4C7BA"
         }
         session.cookies.update(cookies)
 
