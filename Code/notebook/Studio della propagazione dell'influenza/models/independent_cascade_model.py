@@ -13,7 +13,6 @@
 # """
 
 import random
-
 def independent_cascade_model(graph, seed_nodes, p=0.1):
     """
     Implementa il modello a cascata indipendente su un grafo diretto.
@@ -30,11 +29,15 @@ def independent_cascade_model(graph, seed_nodes, p=0.1):
     newly_activated = set(seed_nodes)
     propagation_steps = {0: set(seed_nodes)}  # Salva i nodi attivati per ogni passo
     step = 0
-
+ 
     while newly_activated:
         next_activated = set()
         for node in newly_activated:
-            neighbors = set(graph.successors(node)) - activated  # Solo i successori non attivi
+            if node in graph:
+                neighbors = set(graph.successors(node)) - activated  # Solo i successori non attivi
+            else:
+                print(f"Node {node} not in graph")
+                continue  
             for neighbor in neighbors:
                 if random.random() < p:
                     next_activated.add(neighbor)
