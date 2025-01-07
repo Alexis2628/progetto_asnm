@@ -1,5 +1,9 @@
 import logging
-from graph.GraphConstructor import GraphConstructor
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../..")))
+from Code.notebook.graph.GraphConstructor import GraphConstructor
 from preprocessing.text_preprocessor import TextPreprocessor
 from models.clustering import Clustering
 from visualization.cluster_visualizer import ClusterVisualizer
@@ -15,6 +19,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[logging.StreamHandler()],
 )
+
 
 def main():
     logging.info("Inizio del processo principale.")
@@ -43,26 +48,49 @@ def main():
     sentiment_visualizer = SentimentVisualizer(output_dir=output_dir)
 
     # Visualizza la distribuzione del sentiment
-    sentiment_visualizer.visualize_sentiment_distribution(sentiment_scores, cluster_labels)
+    sentiment_visualizer.visualize_sentiment_distribution(
+        sentiment_scores, cluster_labels
+    )
 
     # Visualizza la mappa di calore sentiment vs temi
-    sentiment_visualizer.visualize_sentiment_vs_themes_heatmap(sentiment_scores, user_opinions, cluster_labels)
+    sentiment_visualizer.visualize_sentiment_vs_themes_heatmap(
+        sentiment_scores, user_opinions, cluster_labels
+    )
 
     # Identificazione e visualizzazione temi polarizzanti
-    polarizing_words = clustering.identify_polarizing_themes(user_opinions, cluster_labels)
+
+    # UnGram
+    polarizing_words = clustering.identify_polarizing_themes(
+        user_opinions, cluster_labels
+    )
     wordcloud_visualizer = WordCloudVisualizer()
-    wordcloud_visualizer.visualize(polarizing_words,output_dir)
+    wordcloud_visualizer.visualize(polarizing_words, output_dir, "Un")
+
+    # BiGram
+    polarizing_words = clustering.identify_polarizing_themes_bigram(
+        user_opinions, cluster_labels
+    )
+    wordcloud_visualizer.visualize(polarizing_words, output_dir, "Bi")
+
+    # TriGram
+    polarizing_words = clustering.identify_polarizing_themes_trigram(
+        user_opinions, cluster_labels
+    )
+    wordcloud_visualizer.visualize(polarizing_words, output_dir, "Tri")
 
     # Topic Modeling
 
     topic_modeling = TopicModeling()
-    lda_model, dictionary, corpus = topic_modeling.perform_topic_modeling(user_opinions, len(set(cluster_labels.values())))
+    lda_model, dictionary, corpus = topic_modeling.perform_topic_modeling(
+        user_opinions, len(set(cluster_labels.values()))
+    )
 
     # Visualizzazione dei temi
     lda_visualizer = LDAViz()
     lda_visualizer.visualize(lda_model, corpus, dictionary, output_dir=output_dir)
 
     logging.info("Processo principale completato.")
+
 
 if __name__ == "__main__":
     main()

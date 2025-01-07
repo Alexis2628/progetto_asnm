@@ -6,4 +6,5 @@ pyLDAvis
 nltk
 textblob
 seaborn
+torch
 wordcloud
