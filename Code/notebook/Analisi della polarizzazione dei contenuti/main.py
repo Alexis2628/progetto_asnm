@@ -72,12 +72,6 @@ def main():
     )
     wordcloud_visualizer.visualize(polarizing_words, output_dir, "Bi")
 
-    # TriGram
-    polarizing_words = clustering.identify_polarizing_themes_trigram(
-        user_opinions, cluster_labels
-    )
-    wordcloud_visualizer.visualize(polarizing_words, output_dir, "Tri")
-
     # Topic Modeling
 
     topic_modeling = TopicModeling()

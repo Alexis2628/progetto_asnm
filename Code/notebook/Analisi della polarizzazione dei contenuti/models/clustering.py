@@ -70,35 +70,6 @@ class Clustering:
         logging.info("Identificazione dei temi polarizzanti completata.")
         return filtered_polarizing_words
 
-    def identify_polarizing_themes_trigram(self, user_opinions, cluster_labels):
-        logging.info("Identificazione dei temi polarizzanti.")
-        vectorizer = TfidfVectorizer(ngram_range=(3, 3))
-        texts = list(user_opinions.values())
-        embeddings = vectorizer.fit_transform(texts).toarray()
-        polarizing_words = []
-        for cluster in set(cluster_labels.values()):
-            cluster_indices = [
-                i for i, label in enumerate(cluster_labels.values()) if label == cluster
-            ]
-            cluster_mean = embeddings[cluster_indices].mean(axis=0)
-            top_features_indices = np.argsort(-cluster_mean)[:10]
-            polarizing_words.extend(
-                [vectorizer.get_feature_names_out()[i] for i in top_features_indices]
-            )
-
-        unique_trigrams = set()
-        filtered_polarizing_words = []
-
-        for trigram in polarizing_words:
-            words = trigram.split()
-            ordered_trigram = tuple(sorted(words))
-            if ordered_trigram not in unique_trigrams and len(set(words)) > 2:
-                unique_trigrams.add(ordered_trigram)
-                filtered_polarizing_words.append(re.sub(" ", "_", trigram))
-
-        logging.info("Identificazione dei temi polarizzanti completata.")
-        return filtered_polarizing_words
-
 
 class ClusteringEmdedding:
     def __init__(self):
