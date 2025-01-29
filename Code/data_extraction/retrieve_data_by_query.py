@@ -106,8 +106,8 @@ class RetrieveDataByQuery:
             "doc_id": "9592290460783575",
         }
         cookies = {
-            "sessionid": "65955050144%3ARAdn9XAbejZtkT%3A18%3AAYfUVsLYHT3qqek503Ujj_V51BvBPSsxR3MtaSAndQ",
-            # "sessionid": "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA"
+            # "sessionid": "65955050144%3ARAdn9XAbejZtkT%3A18%3AAYfUVsLYHT3qqek503Ujj_V51BvBPSsxR3MtaSAndQ",
+            "sessionid": "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA"
             # "sessionid": "65955050144%3AS1xuKkl6W1kKqB%3A23%3AAYcjBamMFOs7TY1uYVsrP-gAou7-TriJJsp8l1NgLA",
             # "sessionid": "71441509544%3AbPWmQfLc5vQhzF%3A7%3AAYfgsFzvtyS88WCjLlPNxUHfxAyfSs-PMk0cunbBMA"
             # "sessionid":"1653774166%3A9uDdOCkxtjfjYr%3A25%3AAYf2jGK4vIx5W_dkE5m8a7PpoN4LA2D5CxUpR4C7BA"
