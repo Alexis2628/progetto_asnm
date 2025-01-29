@@ -1,0 +1,127 @@
+2025-01-29 21:27:59,459 - INFO - Loading processed users from followers_data.csv
+2025-01-29 21:27:59,490 - INFO - Starting follower data collection
+2025-01-29 21:27:59,490 - INFO - Skipping already processed user_pk: 187264532
+2025-01-29 21:27:59,490 - INFO - Skipping already processed user_pk: 39643192594
+2025-01-29 21:27:59,490 - INFO - Skipping already processed user_pk: 3312160968
+2025-01-29 21:27:59,490 - INFO - Skipping already processed user_pk: 623659295
+2025-01-29 21:27:59,490 - INFO - Skipping already processed user_pk: 6018955246
+2025-01-29 21:27:59,490 - INFO - Skipping already processed user_pk: 71440324623
+2025-01-29 21:27:59,491 - INFO - Skipping already processed user_pk: 1175659953
+2025-01-29 21:27:59,491 - INFO - Skipping already processed user_pk: 37065216050
+2025-01-29 21:27:59,491 - INFO - Skipping already processed user_pk: 295418393
+2025-01-29 21:27:59,491 - INFO - Skipping already processed user_pk: 273811002
+2025-01-29 21:27:59,491 - INFO - Skipping already processed user_pk: 45697224377
+2025-01-29 21:27:59,491 - INFO - Skipping already processed user_pk: 241752404
+2025-01-29 21:27:59,491 - INFO - Fetching followers for user_pk: 66897403288
+2025-01-29 21:28:02,630 - ERROR - Error fetching followers for 66897403288: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:28:02,630 - INFO - Fetching followers for user_pk: 429303617
+2025-01-29 21:28:05,784 - ERROR - Error fetching followers for 429303617: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:28:05,784 - INFO - Processing batch of 0 followers
+2025-01-29 21:28:05,784 - INFO - Saved 0 records to followers_data.csv
+2025-01-29 21:28:05,784 - INFO - Fetching followers for user_pk: 5854904084
+2025-01-29 21:28:06,974 - INFO - Fetching followers for user_pk: 1624593034
+2025-01-29 21:28:08,213 - INFO - Processing batch of 73 followers
+2025-01-29 21:28:08,215 - INFO - Saved 73 records to followers_data.csv
+2025-01-29 21:28:08,215 - INFO - Fetching followers for user_pk: 56347813790
+2025-01-29 21:28:10,651 - ERROR - Error fetching followers for 56347813790: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:28:10,651 - INFO - Fetching followers for user_pk: 46153597924
+2025-01-29 21:28:12,177 - ERROR - Error fetching followers for 46153597924: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:28:12,179 - INFO - Processing batch of 0 followers
+2025-01-29 21:28:12,180 - INFO - Saved 0 records to followers_data.csv
+2025-01-29 21:28:12,181 - INFO - Fetching followers for user_pk: 55388117027
+2025-01-29 21:29:50,837 - INFO - Loading processed users from followers_data.csv
+2025-01-29 21:29:50,866 - INFO - Starting follower data collection
+2025-01-29 21:29:50,866 - INFO - Skipping already processed user_pk: 187264532
+2025-01-29 21:29:50,866 - INFO - Skipping already processed user_pk: 39643192594
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 3312160968
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 623659295
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 6018955246
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 71440324623
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 1175659953
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 37065216050
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 295418393
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 273811002
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 45697224377
+2025-01-29 21:29:50,867 - INFO - Skipping already processed user_pk: 241752404
+2025-01-29 21:29:50,867 - INFO - Fetching followers for user_pk: 66897403288
+2025-01-29 21:29:53,541 - ERROR - Error fetching followers for 66897403288: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:29:53,541 - INFO - Fetching followers for user_pk: 429303617
+2025-01-29 21:30:54,698 - INFO - Loading processed users from followers_data.csv
+2025-01-29 21:30:54,724 - INFO - Starting follower data collection
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 187264532
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 39643192594
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 3312160968
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 623659295
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 6018955246
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 71440324623
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 1175659953
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 37065216050
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 295418393
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 273811002
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 45697224377
+2025-01-29 21:30:54,724 - INFO - Skipping already processed user_pk: 241752404
+2025-01-29 21:30:54,724 - INFO - Fetching followers for user_pk: 66897403288
+2025-01-29 21:30:57,712 - ERROR - Error fetching followers for 66897403288: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:30:57,713 - INFO - Fetching followers for user_pk: 429303617
+2025-01-29 21:31:00,779 - ERROR - Error fetching followers for 429303617: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:31:00,779 - INFO - Processing batch of 0 followers
+2025-01-29 21:31:00,779 - INFO - Saved 0 records to followers_data.csv
+2025-01-29 21:31:00,779 - INFO - Skipping already processed user_pk: 5854904084
+2025-01-29 21:31:00,779 - INFO - Skipping already processed user_pk: 1624593034
+2025-01-29 21:31:00,779 - INFO - Fetching followers for user_pk: 56347813790
+2025-01-29 21:33:20,356 - INFO - Loading processed users from followers_data.csv
+2025-01-29 21:33:20,386 - INFO - Starting follower data collection
+2025-01-29 21:33:20,388 - INFO - Skipping already processed user_pk: 187264532
+2025-01-29 21:33:20,389 - INFO - Skipping already processed user_pk: 39643192594
+2025-01-29 21:33:20,389 - INFO - Skipping already processed user_pk: 3312160968
+2025-01-29 21:33:20,390 - INFO - Skipping already processed user_pk: 623659295
+2025-01-29 21:33:20,390 - INFO - Skipping already processed user_pk: 6018955246
+2025-01-29 21:33:20,391 - INFO - Skipping already processed user_pk: 71440324623
+2025-01-29 21:33:20,391 - INFO - Skipping already processed user_pk: 1175659953
+2025-01-29 21:33:20,392 - INFO - Skipping already processed user_pk: 37065216050
+2025-01-29 21:33:20,392 - INFO - Skipping already processed user_pk: 295418393
+2025-01-29 21:33:20,394 - INFO - Skipping already processed user_pk: 273811002
+2025-01-29 21:33:20,394 - INFO - Skipping already processed user_pk: 45697224377
+2025-01-29 21:33:20,395 - INFO - Skipping already processed user_pk: 241752404
+2025-01-29 21:33:20,396 - INFO - Fetching followers for user_pk: 66897403288
+2025-01-29 21:33:23,908 - ERROR - Error fetching followers for 66897403288: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:33:23,923 - INFO - Fetching followers for user_pk: 429303617
+2025-01-29 21:35:56,875 - INFO - Loading processed users from followers_data.csv
+2025-01-29 21:35:56,909 - INFO - Starting follower data collection
+2025-01-29 21:35:56,911 - INFO - Skipping already processed user_pk: 187264532
+2025-01-29 21:35:56,912 - INFO - Skipping already processed user_pk: 39643192594
+2025-01-29 21:35:56,914 - INFO - Skipping already processed user_pk: 3312160968
+2025-01-29 21:35:56,915 - INFO - Skipping already processed user_pk: 623659295
+2025-01-29 21:35:56,916 - INFO - Skipping already processed user_pk: 6018955246
+2025-01-29 21:35:56,917 - INFO - Skipping already processed user_pk: 71440324623
+2025-01-29 21:35:56,918 - INFO - Skipping already processed user_pk: 1175659953
+2025-01-29 21:35:56,919 - INFO - Skipping already processed user_pk: 37065216050
+2025-01-29 21:35:56,920 - INFO - Skipping already processed user_pk: 295418393
+2025-01-29 21:35:56,921 - INFO - Skipping already processed user_pk: 273811002
+2025-01-29 21:35:56,921 - INFO - Skipping already processed user_pk: 45697224377
+2025-01-29 21:35:56,924 - INFO - Skipping already processed user_pk: 241752404
+2025-01-29 21:35:56,925 - INFO - Fetching followers for user_pk: 66897403288
+2025-01-29 21:35:59,596 - ERROR - Error fetching followers for 66897403288: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:35:59,599 - INFO - Follower data collection completed
+2025-01-29 21:44:55,012 - INFO - Loading processed users from followers_data.csv
+2025-01-29 21:44:55,043 - INFO - Starting follower data collection
+2025-01-29 21:44:55,046 - INFO - Skipping already processed user_pk: 187264532
+2025-01-29 21:44:55,047 - INFO - Skipping already processed user_pk: 39643192594
+2025-01-29 21:44:55,050 - INFO - Skipping already processed user_pk: 3312160968
+2025-01-29 21:44:55,051 - INFO - Skipping already processed user_pk: 623659295
+2025-01-29 21:44:55,052 - INFO - Skipping already processed user_pk: 6018955246
+2025-01-29 21:44:55,054 - INFO - Skipping already processed user_pk: 71440324623
+2025-01-29 21:44:55,055 - INFO - Skipping already processed user_pk: 1175659953
+2025-01-29 21:44:55,057 - INFO - Skipping already processed user_pk: 37065216050
+2025-01-29 21:44:55,059 - INFO - Skipping already processed user_pk: 295418393
+2025-01-29 21:44:55,060 - INFO - Skipping already processed user_pk: 273811002
+2025-01-29 21:44:55,061 - INFO - Skipping already processed user_pk: 45697224377
+2025-01-29 21:44:55,063 - INFO - Skipping already processed user_pk: 241752404
+2025-01-29 21:44:55,064 - INFO - Fetching followers for user_pk: 66897403288
+2025-01-29 21:49:19,949 - INFO - Fetching followers for user_pk: 429303617
+2025-01-29 22:12:41,500 - INFO - Processing batch of 17604 followers
+2025-01-29 22:12:41,552 - INFO - Saved 17604 records to followers_data.csv
+2025-01-29 22:12:41,554 - INFO - Skipping already processed user_pk: 5854904084
+2025-01-29 22:12:41,556 - INFO - Skipping already processed user_pk: 1624593034
+2025-01-29 22:12:41,558 - INFO - Fetching followers for user_pk: 56347813790
+2025-01-29 22:25:09,265 - INFO - Fetching followers for user_pk: 46153597924
