@@ -125,3 +125,9 @@
 2025-01-29 22:12:41,556 - INFO - Skipping already processed user_pk: 1624593034
 2025-01-29 22:12:41,558 - INFO - Fetching followers for user_pk: 56347813790
 2025-01-29 22:25:09,265 - INFO - Fetching followers for user_pk: 46153597924
+2025-01-29 22:30:35,751 - ERROR - Error fetching followers for 46153597924: Expecting value: line 1 column 1 (char 0)
+2025-01-29 22:30:35,753 - INFO - Saving remaining 10070 followers
+2025-01-29 22:30:35,788 - INFO - Saved 10070 records to followers_data.csv
+2025-01-29 22:30:35,789 - INFO - Follower data collection completed
+2025-01-29 22:45:37,502 - INFO - Starting follower data collection
+2025-01-29 22:45:37,504 - INFO - Fetching followers for user_pk: 1551360443
