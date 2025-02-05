@@ -40,8 +40,8 @@ def hits_scores(graph):
 class GraphConstructor:
     def __init__(
         self,
-        followers_path="Code/data_extraction/followers_dataset_combined.csv",
-        data_path="Code/data_extraction/data.csv",
+        followers_path="Code/data_extraction/followers_Artificial_intelligence.csv",
+        data_path="Code/data_extraction/data_Artificial_Intelligence.csv",
         info_filepath="graph_info.json",
         centralities_filepath="centralities_info.json",
     ):

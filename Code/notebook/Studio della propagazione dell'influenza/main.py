@@ -42,8 +42,8 @@ if __name__ == "__main__":
 
     logger.info("Initializing GraphConstructor")
     gc = GraphConstructor(
-        followers_path="Code/data_extraction/followers_dataset_combined.csv",
-        data_path="Code/data_extraction/data.csv",
+        # followers_path="Code/data_extraction/followers_dataset_combined.csv",
+        # data_path="Code/data_extraction/data.csv",
         info_filepath="graph_info.json",
         centralities_filepath="centralities_info.json",
     )
